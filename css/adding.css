@@ -3,10 +3,11 @@ body{
     background-color: #f0f0f0;
     display: flex;
     
+    
 }
 
 .container{
-   margin: 1em;
+    margin:0 auto;
     max-width:18em;
     border: #fff solid 2px;
     background-color: #fff;

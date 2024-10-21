@@ -30,13 +30,22 @@ document.getElementById('submit').onclick = function(e){
     const first_name = document.getElementById("firstName").value;
     const second_name = document.getElementById("secondName").value;
     const emailInput = document.getElementById("email").value;
-    
+
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[a-zA-Z]{2,}$/
+;
+
+   
     
     if(first_name && second_name && emailInput){
         my_field.textContent = `Form submitted successfully! ${first_name}. `;
         back.textContent = 'Back';
        
     }
+
+    else if (!emailRegex.test(email.value)) {
+        errorDiv.textContent = "Please enter a valid email address.";
+    }
+    
     
 
     else{
