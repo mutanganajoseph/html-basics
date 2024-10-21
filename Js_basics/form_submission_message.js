@@ -4,15 +4,6 @@ const my_field = document.getElementById("myField");
 const submitted = document.getElementById("submitted");
 let back = document.querySelector("a");
 
-function success(){
-
-submitted.textContent = `Form submitted successfully ${first_name}!`;
-back.textContent = 'back';
-
-
-
-}
-
 function clear_error(){
     errorDiv.textContent ='';
 }
