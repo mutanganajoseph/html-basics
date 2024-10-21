@@ -1,0 +1,48 @@
+body{
+    background-color: #f0f0f0;
+    text-align: center;
+    margin:9em auto;
+}
+
+
+
+
+.formElement{
+    margin: 1em;
+}
+
+input{
+    border-radius: 4px;
+    padding: 5px;
+   
+}
+
+input[type="button"]{
+    background-color: blue;
+    color: #fff;
+    margin: 1em;
+    
+}
+
+input[type="button"]:hover{
+        background-color: rgb(63, 63, 206);
+}
+
+.error{
+color: red;
+font-size: smaller;
+}
+
+
+
+a{
+    color: blue;
+    border-radius: 8px;
+    padding: 2px;
+    text-decoration: none;
+    margin: 2em;
+}
+
+h3{
+    color: green;
+}

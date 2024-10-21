@@ -1,11 +1,18 @@
 let totalSum = 0.00; // Initialize totalSum variable
 const num = document.getElementById("num");
 const resultDiv = document.getElementById("result");
+const errorDiv = document.getElementById("error");
+const hideBalance = document.getElementById('hide');
+const hide = document.getElementById("hidebalance")
 
 function updateResult() {
-    resultDiv.textContent = `${totalSum.toFixed(2)}FRW`; // Display the updated total with two decimal places
+    if (hideBalance.checked) {
+        resultDiv.textContent = '******'; // Show asterisks if hidden
+    } else {
+        resultDiv.textContent = `${totalSum.toFixed(2)}FRW`; // Display the updated total with two decimal places
+    }
+    errorDiv.textContent = ''; // Clear any previous error messages
 }
-
 document.getElementById('add').onclick = function(e) {
     e.preventDefault(); // Prevent default button behavior
     const valueToAdd = parseFloat(num.value); // Get the input value as a number
@@ -15,14 +22,17 @@ document.getElementById('add').onclick = function(e) {
         totalSum += valueToAdd; // Update total sum
         updateResult();// Display the updated total
         num.value = ''; // Clear the input field
+        errorDiv.value = '';
     } 
     else if (valueToAdd <= 0){
-        resultDiv.innerHTML = ' <div class="error">Value can not be less 0r equal 0!</div>';
+        errorDiv.textContent = "Value can not be less 0r equal 0!";
+        
+        
     }
     
     else {
         
-        resultDiv.innerHTML = '<div class="error"> Please enter a valid number.</div>'; // Alert if input is invalid
+        errorDiv.textContent = ' Please enter a valid number.'; // Alert if input is invalid
     }
 };
 
@@ -36,7 +46,7 @@ document.getElementById('minus').onclick = function(e){
     e.preventDefault();
    if(totalSum < 1){
     updateResult();
-    resultDiv.innerHTML = ' <div class="error">Balance can not be less than 0!</div>'
+    errorDiv.textContent = "Balance can not be less than 0!";
    }
    
    if(totalSum >= 1){
@@ -48,16 +58,13 @@ document.getElementById('minus').onclick = function(e){
 };
 
 
-const hideBalance = document.getElementById('hide');
+
 
 hideBalance.addEventListener('change', function() {
 if (this.checked) {
-resultDiv.textContent = '******';
-}
 
-else{
-    updateResult();
 }
+updateResult();
 
 });
 

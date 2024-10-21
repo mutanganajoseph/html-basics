@@ -6,13 +6,14 @@ body{
 }
 
 .container{
- 
+   margin: 1em;
     max-width:18em;
     border: #fff solid 2px;
     background-color: #fff;
     border-radius: 10px;
     animation: plac 2s linear infinite;
-    height: 32vh;
+     
+   
     
 }
 
@@ -70,12 +71,11 @@ padding: 1em;
 }
 
 .error{
-    margin-top: -0.7em;
-    font-size: smaller;
+    margin: 0.4em;
+    font-size: 0.7em;
     color: red;
-    position: absolute;
-    margin-top: 13em;
-    margin-left: -13em;
+    text-align: center;
+   
 }
 .hover-button{
     margin: 2em auto;

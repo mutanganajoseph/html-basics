@@ -9,7 +9,7 @@
 <body>
     <div class="container">
 
-        <div class="check"><input type="checkbox" id="hide"> Hide balance.
+        <div class="check"><input type="checkbox" id="hide"> <label id="hidebalance" for="hide"> Hide balance</label>
         </div>
 
     <div class="added">Balance: <div class="result" id="result">0.00FRW</div></div>
@@ -18,18 +18,11 @@
         <div class="clicked"><button id="plus">+1</button>
             <input type="text" id="num" placeholder="Enter"><button id="minus">-1</button>
         </div>
-        <div class="error"></div>
+        <div class="error" id="error"></div>
     </div>
 
        <div class="execute"> <button class="hover-button" id="add"><span>Add</span></button>  </div>    
-
-</div>
-<div class="pass">
-<input type="password" id="password" placeholder="Hide and show">
-<input type="checkbox" id="show_password">Show password
-<input type="checkbox" id="clear">Clear password
-<textarea  placeholder="Text here"></textarea></div>
-
+ </div>
 
 <script src="Js_basics/adding.js"></script>
 
