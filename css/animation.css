@@ -1,0 +1,53 @@
+
+
+body {
+    background-color: black;
+   justify-content: center;
+    align-items: center; /* Center vertically */
+}
+
+span {
+    size: 1px;
+    padding: 2em;
+    border: 3px solid white;
+    background-color: red;
+    color: aliceblue;
+    text-transform: uppercase;
+    text-align: center;
+    display: inline-block;
+    transition-property: background-color, transform;
+    transition-duration: 2s;
+    margin-left: 103em;
+}
+
+span:hover {
+    background-color: #faf7fcfa;
+    transform: rotate(900deg);
+    border: 3px solid red;
+    color: #da1414;
+}
+span{
+    animation-name: slide;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 2s;
+    animation-iteration-count: 10000000;
+}
+@keyframes slide {
+    0%{
+        transform: translateX(0);
+        transform: rotate(5deg);
+        
+
+    }}
+    /*33%{
+        transform: translateX(60px) rotate(10deg);
+    }
+    66%{
+        
+    }
+    100%{
+       transform: translateX(0); 
+       background-color: blue;
+    }
+}

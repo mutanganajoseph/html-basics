@@ -1,0 +1,333 @@
+
+html{
+    margin:0 auto;
+    padding: 0;
+    scroll-behavior: smooth;
+    font-size: medium;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(11, 19, 46);
+    z-index: 1;
+  
+}
+
+body {
+    background-color:rgb(11, 19, 46);
+    margin:0 auto;
+    padding: 0;
+    min-height: 100vh;
+    max-width: 800px;
+    box-sizing: border-box;
+    
+}
+
+img {
+    max-width: 80%;
+    height: auto;
+    justify-content: center;
+}
+
+  
+    
+    .welcome h1,
+    button {
+        position: static;
+        margin: 10px 0;
+    }
+
+header {
+    z-index: 1;
+    top: 0;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+     padding-bottom:-2em;
+     padding: 1px;
+     text-align: center;
+}
+.top, h1, h2{
+    color: #fff;
+    text-transform: uppercase;
+}
+@keyframes anim {
+    0% {
+        transform: skew(0deg, -3deg) scaleY(0);
+    }
+    60% {
+        transform: skew(1deg, -3deg) scaleY(1.2);
+    }
+    100% {
+        transform: skew(1deg, -1deg) scaleY(1.2);
+    }
+}
+
+.icon {
+    position: sticky;
+    top: 0;
+    z-index: 1; 
+    text-align: center;
+    justify-content: center;
+    background-color:rgb(11, 19, 46);
+}
+
+.icon a {
+    
+    border-bottom:white 2px solid;
+    color: white;
+    margin:0.6em 4em;
+    text-decoration: none;
+    display:inline-block; 
+   
+}
+
+
+
+
+.welcome {
+
+    top: 0;
+    margin: 0 auto;
+    text-align: center;
+     justify-content: center;
+     margin-bottom: -13em;
+     background-color: rgb(11, 19, 46);
+}
+
+.welcome h1 {
+    margin-top:0.6em ;
+    background-color: rgb(9, 30, 9);
+    padding: 0.25em 0.25em;
+    color: aliceblue;
+    text-shadow: 2px 2px 5px;
+    position: absolute;
+    margin-left: 3.8em;
+    animation:our 5s ease-in-out 1s forwards;
+    animation-iteration-count: infinite;
+}
+
+@keyframes our {
+    0% {
+        
+        transform: skew(0deg, -5deg) scaleY(0);
+    }
+    60% {
+        
+        transform: skew(10deg, -5deg) scaleY(1.2);
+    }
+    100% {
+        
+        transform: skew(10deg, -5deg) scaleY(1.2);
+    }
+}
+.about{
+    margin-top: -1.4em;
+    color:#fff;
+    text-align: center;
+    background-color: rgb(11, 19, 46);
+    padding: 2em;
+   
+}
+
+.about h1 {
+    padding: 1em 2em;
+    font-size: x-large;
+  
+}
+details p{
+    letter-spacing: 2px;
+}
+
+.food {
+    background-color: rgb(11, 19, 46);
+    color: aliceblue;
+    display: flex;
+    margin-top: 15em;
+    padding-bottom: -4em;
+    gap: 1em;
+    justify-content: center;
+}
+
+.food table {
+    border: 2px white solid;
+    border-radius: 1em 1em 0.7em 0.7em;
+    border: #fff ;
+    margin: 0 auto;
+    width: 100%;
+}
+.food th{
+    font-weight: bolder;
+    height: 3em;
+}
+.food td:last-child {
+    text-align: center;
+    padding: 0.2em 0.3em;
+}
+
+.food td:first-child {
+    margin-left: 1em;
+    padding-left: 1em;
+}
+
+
+.quote {
+    margin-top: 2em;
+    white-space: pre-wrap;
+    width: 300px;
+    text-transform: capitalize;
+    margin-left: 2em;
+}
+
+.quote h1 {
+    font-size: large;
+}
+summary{
+    margin-left: 9em;
+    font-size: x-large;
+    margin-top: -2.8em;
+}
+
+.proud {
+    
+    margin-top: 3em;
+
+    text-align: center;
+ justify-content: center;
+ margin-bottom: -1.43em;
+ background-color:rgb(11, 19, 46);
+ 
+}
+
+.proud b {
+    margin:0 auto;
+    margin-top:1em;
+        background-color:rgb(11, 19, 46);
+    position:relative;
+    white-space: pre-wrap;
+    color:#fff;
+    justify-content: center;
+    width: 300px;
+    margin-left: 1.5em;
+    padding-bottom:0.3em;
+}
+
+.table__time {
+    margin-top: em;
+    margin: 0 auto;
+    justify-content: center;
+    text-align: center;
+    text-decoration: dotted;
+    text-transform: uppercase;
+    font-weight: bold;
+    background-color: rgb(11, 19, 46);
+    color: aliceblue;
+    padding-top: 3em;
+}
+
+.table__time p {
+    letter-spacing: 3px;
+    min-width: 80px;
+}
+
+.table__time table {
+    margin: 0 auto;
+    border-radius: 1.6em 1.6em 0 0;
+    margin-bottom: 3em;
+    border: 2px solid white;
+}
+
+.table__time table th {
+    padding: 1em;
+    gap: 3em;
+    font-weight: 22px;
+    text-align: center;
+}
+.table__time table th:first-child {
+    border-radius:1.6em 0 0;
+}
+
+.table__time table th:last-child {
+    border-radius: 0 1.6em 0 0;
+}
+
+.table__time table td {
+    font-weight: 90;
+    height: 6em;
+}
+.contact{
+    text-align: center;
+    margin-left: 2em;
+    list-style-type: none; 
+    
+}
+.contact h1{
+    text-transform: uppercase;
+    font-weight: bolder;
+    /*text-shadow: 3px 3px 5px green;*/
+}
+.contact li{
+    margin-top:1em;
+}
+.contact a{
+    color: aliceblue;
+    text-decoration: none;
+    transition: 0.5s;
+   
+    font-size: medium;
+    text-transform: none;
+    margin: 2px;
+    
+}
+.contact li a:focus{
+    padding: 7px;
+    border-radius: 12px;
+   
+    
+}
+ footer{
+    text-align: center;
+    margin: 2em;
+ }
+
+.copy{
+
+    padding-bottom: 1em;
+    text-transform: uppercase;
+    font-size: x-small;
+    color: #fff;
+   
+    
+    
+}
+footer button {
+    background-color: rgb(11, 19, 46);
+    padding: 7px 0;
+    border-radius: 20px;
+    border: none;
+    margin-bottom: 1em;
+
+  
+}
+footer button a{
+    color: aliceblue;
+    font-size: 2em;
+    text-align: center;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+audio{
+    width: 1.2em;
+    height: 1.2em;
+}
+
+@media (max-width:768px) {
+    .icon a{
+        margin: 1em;
+    }
+    .welcome h1{
+        left: -3.7em;
+    }
+    .food{
+        flex-direction: column;
+    }
+    
+}

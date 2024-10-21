@@ -1,0 +1,146 @@
+body{
+margin: 0;
+padding: 0;
+text-align: center;
+background-color: rgb(10, 18, 44);
+}
+header{
+    text-align: center;
+    background-color: rgb(10, 18, 44);
+    color: aliceblue;
+    font-size: xx-large;
+    text-decoration: none;
+    font-style: italic;
+   
+   
+}
+header h1{
+    border-bottom:none;
+}
+
+    
+.canal{
+    /* max-width: 16em; */
+    background-color: #fff;
+    max-width:16em; 
+    margin: 1.8em;
+    text-align: center;
+    padding: 3em; 
+    border: 1em hwb(310 38% 21%) solid;
+    
+    /* outline: 0.4em pink;
+    overflow: none;*/
+    height: 27rem;
+    display:inline-block;
+    
+}
+/* .canal button{
+    
+    border-radius: 0.5em;
+    padding: 0.4em;
+    font-size:1em;
+    color:hsl(0, 44%, 96%);
+    background-color: hwb(310 38% 21%);
+    border:inset 3px white solid;
+}
+.canal button:hover {
+    background-color: rgb(158, 3, 166);
+    transform: scale(1);
+    transition:  2s;
+   
+} */
+.hover-button {
+    
+    border-radius: 50%;
+    position: relative;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 10px;
+    background-color: #c01eb0;
+    color: white;
+    overflow: hidden;
+    /* cursor: ;
+    outline: ;
+    z-index: ; Ensure button is above any potential overlapping elements */
+}
+
+.hover-button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: green; /* Color of the hover effect */
+    transform: translateY(100%);
+    transition: transform 1s ease;
+    z-index: 0; /* Ensure the pseudo-element is below the button text */
+}
+
+.hover-button:hover::before {
+    transform: translateY(0);
+}
+
+.hover-button span{
+    position: relative;
+    z-index: 1;
+}
+
+.background-video {
+    position:fixed;
+    right: 0;
+    bottom: 0;
+    min-width:100%;
+    min-height: 100%;
+    z-index: -1;
+        }
+
+        img, button, span, .end{
+            margin-top: 4em;
+        }
+        
+        .end {
+            border: 2px black ;
+            text-align: center;
+            display: inline-block;
+            /* margin-top: 3em; */
+        }
+        .copy{
+            color: #f0f8ff;
+            margin: 4em;
+            
+    
+        }
+
+
+        @media (max-width:768px){ 
+            .all{
+                flex-direction: column;
+            }
+            .canal{
+               max-height: 18em;
+            }
+            .copy{
+            
+                margin: 2em;
+            }
+
+            img, button, h5, .end{
+                margin-top: 1.2em;
+            }
+            header h1{
+                font-size: 1em;
+            }
+
+            .canal h1{
+                font-size: 1.2em;
+                
+            }
+            h3{
+                font-size: 1.3em;
+                text-align: center;
+               
+            }
+
+        }

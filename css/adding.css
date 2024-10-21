@@ -1,0 +1,152 @@
+body{
+    align-content: center;
+    background-color: #f0f0f0;
+    display: flex;
+    
+}
+
+.container{
+ 
+    max-width:18em;
+    border: #fff solid 2px;
+    background-color: #fff;
+    border-radius: 10px;
+    animation: plac 2s linear infinite;
+    height: 32vh;
+    
+}
+
+.check{
+    margin: 1rem;
+    margin-left: 7em;
+}
+
+.added{
+margin: 1em;
+margin-left: 7em;
+border: solid 1px;
+padding: 1em;
+
+}
+.result{
+    margin-left: 5.8em;
+    margin-top:-1.2em;   
+    overflow-x:auto;
+    scrollbar-width: none;
+    font-size: small;
+    
+}
+
+
+.clicked{
+    margin-top:1em;
+}
+
+.clicked input, button{
+    font-weight: bolder;
+    margin-left:7em;
+    text-align: center;
+    width:3em;
+    border: none;
+    margin-top: -0.2em;
+}
+
+::placeholder{
+    font-size: xx-small;
+}
+
+.clicked input{
+    border:#bbb solid 1px;
+    width: 2.6em;
+
+}
+.clicked input:active{
+    border: none;
+
+}
+
+.enter{
+    margin: 1em;
+}
+
+.error{
+    margin-top: -0.7em;
+    font-size: smaller;
+    color: red;
+    position: absolute;
+    margin-top: 13em;
+    margin-left: -13em;
+}
+.hover-button{
+    margin: 2em auto;
+    border-radius: 50%;
+    position: relative;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 6em;
+    margin-left: 5em;
+    
+}
+
+.hover-button::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color:#bbb;
+    transform: translateY(100%);
+    transition: transform 1s ease;
+    z-index: 0; 
+}
+.hover-button:hover::before{
+    transform: translateY(0);
+    
+}
+
+
+.execute span{
+    z-index: 1;
+    position: relative;
+}
+
+.pass{
+ margin: 2em;  
+ color: #fff;
+background-color: #fff;
+border-radius: 10px;
+font-size: 0.8em;
+color: black;
+
+}
+.pass input[type="password"],
+      .pass input[type="text"],
+       .pass input[type="checkbox"]{
+border-radius: 5px;
+border: none;
+padding: 0.3em;
+margin: 0.7em;
+text-align: justify;
+}
+::placeholder{
+    text-align: center;
+}
+
+textarea{
+    margin: 0.8em;
+    height: 12vh;
+}
+
+
+@keyframes place {
+    0% {
+      transform: rotate(0deg) translate(150px) rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg) translate(150px) rotate(-360deg);
+    }
+  }

@@ -1,0 +1,50 @@
+html{
+scroll-behavior: smooth
+}
+body{
+    margin: 0;
+    
+}
+section{
+    height: 101vh;
+    text-align: center;
+}
+.blue{
+    background-color: blue;
+}
+.red{
+    background-color: red;
+}
+.green{
+    background-color: green
+}
+footer, header{
+    color: aliceblue;
+    text-align: center;
+    height: 8rem;
+}
+header{
+    position: sticky;
+    top: 0;
+    font-size: 5rem;
+    font-size: 5rem;
+}
+footer{
+    background-color: #333;
+    position: sticky;
+    bottom: 0;
+    font-size: 3rem;
+}
+a:visited{
+ 
+   color:aliceblue;
+}
+a{
+    text-decoration: none;
+}
+a:active{
+    color: purple;
+}
+a:hover{
+    border: #fcf4f4 2px solid;
+}

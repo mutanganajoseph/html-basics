@@ -1,0 +1,54 @@
+body{
+    margin: 0;
+    padding: 0;
+   
+}
+.container{
+    max-width: 700px;
+    margin:0 auto;
+    
+}
+
+.check_service{
+    color: rgb(32, 18, 439);
+    font-size: x-large;
+    border-bottom: #bbb solid 1px;
+    margin: 1em;
+}
+
+.display{
+    border: 0.2px #bbb solid; 
+    margin: 2em;
+    width: 60%;
+    height: 20vh;
+    overflow-y:scroll;
+    text-align: left;
+    margin-left: 13em;
+}
+
+.command{
+    margin: 2.4em;
+    margin-top: -1.3em;
+    font-size: small;
+    margin-bottom: 0.7em;
+}
+
+input{
+margin: 2.2em;
+margin-top: 0em;
+}
+
+button{
+    margin-left: 5em;
+    background-color: rgb(119, 168, 241);
+    border-radius: 2px;
+    width: 8%;
+    color: rgb(10, 11, 12);
+   
+}
+
+.small_text{
+    font-size: 0.8em;
+    color: blue;
+    margin-left: 1em;
+}

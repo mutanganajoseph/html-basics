@@ -1,0 +1,70 @@
+body {
+    background-color: rgb(4, 4, 167);
+    color: whitesmoke;
+    margin:0 auto;
+    
+}
+
+h1{
+    font-size: x-large;
+}
+.container{
+    margin:0 auto;
+    border: #333 solid;
+}
+button {
+    padding: 12px;
+    border-radius: 8px;
+    font-weight: bold;
+    margin: 0 auto;
+    border: 2px solid white;
+    cursor: pointer;
+    color: whitesmoke;
+    background-color:rgb(4, 4, 167);
+}
+
+fieldset {  
+    margin:9em auto;
+    width: 22em;
+    border: 1px solid whitesmoke;
+    border-radius: 8px;
+    height: 26em;
+}
+input{
+    padding: 12px;
+    text-align: center;
+    background-color: rgb(4, 4, 167);
+    color: white;
+    border: white solid 1px;
+}
+.symbols {
+    margin-top: -12em;
+    text-align: center;
+    margin-left: 17em;
+
+}
+.symbols li {
+    list-style: none;
+    margin: 0.5em;
+    
+    
+}
+.result {
+    font-size: 1.5em;
+    margin-top: 1em;
+    text-align: center;
+}
+.user button{
+    position: absolute;
+    margin-top: 27em;
+    margin-left: 20em;
+    margin-bottom: 2em;
+}
+
+.error {
+    color: red;
+    font-weight: bold;
+    margin-top: 10px;
+    text-align: center;
+    font-size: 0.8em;
+}
