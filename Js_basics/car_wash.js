@@ -2,7 +2,7 @@
 const footer = document.getElementById("footer");
 const error = document.getElementById("error");
 const access = document.getElementById("access");
-const back = document.querySelector("back");
+let back = document.querySelector("h4");
 
 function clear(){
     error.textContent = '';
@@ -22,26 +22,40 @@ function clear(){
 
 document.getElementById("send").onclick = function(e){
     e.preventDefault();
-    const first_name = document.getElementById("first_name").value;
-    const second_name = document.getElementById("second_name").value;
-    const email = document.getElementById("email").value;
-    const car_name = document.getElementById("car_name").value;
-    const car_id = document.getElementById("car_id").value;
-    const time = document.getElementById("time").value;
-    const message = document.getElementById("message").value;
-    const washer_name = document.getElementById("select").value;
-    
+    const first_name = document.getElementById("first_name").value.trim();
+    const second_name = document.getElementById("second_name").value.trim();
+    const email = document.getElementById("email").value.trim();
+    const car_name = document.getElementById("car_name").value.trim();
+    const car_id = document.getElementById("car_id").value.trim();
+    const time = document.getElementById("time").value.trim();
+    const message = document.getElementById("message").value.trim();
+    const washer_name = document.getElementById("select").value.trim();
 
-    if(first_name && second_name && email && car_name && car_id && time && washer_name && message){
+    if (washer_name =="select_washer"){
+        error.textContent = 'You did not select washer!'
+    }
+
+
+    else if(first_name && second_name && email && car_name && car_id && time && washer_name && message && washer_name){
         clear();
-        footer.textContent = `Hello ${first_name}! Thank you very much your booking was accepted successfully! Your message received ${message}.`;
+        footer.textContent = `Hello ${first_name}! Thank you very much your booking was accepted successfully! Your message received, ${message}.`;
         back.textContent = 'Back';
        
     }
 
     else {
         clear();
-        error.textContent = 'Please fill the form!';
+        error.textContent = 'Please fill the form with valid inputs!';
     }
 
 };
+
+document.getElementById('terms').onclick = function(e){
+    e.preventDefault();
+    footer.textContent = 'Nothing is here!'
+}
+
+document.getElementById('privacy').onclick = function(e){
+    e.preventDefault();
+    footer.textContent = 'Nothing is here!'
+}

@@ -18,9 +18,9 @@ document.getElementById('submit').onclick = function(e){
 
 
     
-    const first_name = document.getElementById("firstName").value;
-    const second_name = document.getElementById("secondName").value;
-    const emailInput = document.getElementById("email").value;
+    const first_name = document.getElementById("firstName").value.trim();
+    const second_name = document.getElementById("secondName").value.trim();
+    const emailInput = document.getElementById("email").value.trim();
 
     const emailRegex = /^[^\s@]+@[^\s@]+\.[a-zA-Z]{2,}$/
 ;

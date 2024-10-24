@@ -1,0 +1,126 @@
+body{
+    margin: 0;
+    color: rgb(156, 156, 160);
+    padding: 0;
+    position: relative; /*this help to postion element in body*/
+    min-height: 100vh;
+    text-align: center;
+    background-color:rgb(12, 11, 22);
+}
+.header{
+    padding: 3em;
+    text-align: center;
+    border-bottom: rgb(67, 67, 70) solid 0.2px;
+    
+}
+
+.container{
+    display: flex;
+    gap: 0.6em;
+    
+    
+}
+
+
+
+.left_side{
+    white-space: wrap;
+    height: 71.4vh;
+    overflow-y: auto;
+    scrollbar-width: none;
+    max-width: 40%;
+    padding: 1em;
+    border: rgb(67, 67, 70) solid 0.2px;
+    border-bottom: none;
+   
+}
+
+form{
+    margin: auto;
+    
+}
+input{
+    margin: 0.2em;
+    border-radius: 5px;
+    padding: 0.5em;
+    color: aliceblue;
+    background-color:rgb(67, 67, 70);
+    
+}
+.left_side p{
+    margin: 0.2em;
+    min-width: 50%;
+   
+    
+}
+input[type='button']{
+    background-color: green;
+    width: 85%;
+    border: none;
+    
+    
+}
+
+.create{
+    font-size: 0.7em;
+}
+
+
+
+.middel_side{
+    margin: auto;
+    text-align: center;
+    height: 60vh;
+    padding: 1em;
+    width: 50%;
+    overflow-y: auto;
+   
+}
+
+.right_side{
+    margin: 0.6em;
+    padding: 1em;
+    
+   
+   
+}
+
+.bottom_side{
+    right: 0;
+    left: 0;
+    border-top: rgb(67, 67, 70) solid 0.2px;
+    position: absolute;
+    bottom: 0;
+    padding: 1em;
+    text-align: center;
+}
+
+
+.error{
+    text-align: center;
+    color: red;
+    font-size: 0.7em;
+    margin: 1em;
+}
+
+
+@media (max-width:768px){
+    .right_side, .left_side{
+       
+        display: none;
+    }
+  
+}
+
+@media (max-width:1180px){
+
+    .right_side{
+        display: none;
+    }
+}
+
+
+
+
+
+

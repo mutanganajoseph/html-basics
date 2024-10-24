@@ -40,6 +40,18 @@ button{
     
 }
 
+select{
+    margin-top: 0.6em;
+    padding: 0.6em;
+    width: 28%;
+}
+
+[type="time"]{
+    margin-top: 0.6em;
+    padding: 0.6em;
+    width: 25%;
+}
+
 .error{
     color: red;
     font-size: em;
