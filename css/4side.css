@@ -28,7 +28,7 @@ body{
     height: 71.4vh;
     overflow-y: auto;
     scrollbar-width: none;
-    max-width: 40%;
+    width: 30%;
     padding: 1em;
     border: rgb(67, 67, 70) solid 0.2px;
     border-bottom: none;
@@ -55,7 +55,7 @@ input{
 }
 input[type='button']{
     background-color: green;
-    width: 85%;
+    width: 54%;
     border: none;
     
     
@@ -65,6 +65,14 @@ input[type='button']{
     font-size: 0.7em;
 }
 
+.second{
+    padding: 3em;
+    border: rgb(67, 67, 70) solid 0.2px;
+    margin: 1em;
+   
+    overflow-x: auto;
+    scrollbar-width: none;
+}
 
 
 .middel_side{
@@ -74,16 +82,44 @@ input[type='button']{
     padding: 1em;
     width: 50%;
     overflow-y: auto;
+    scrollbar-width: none;
    
 }
 
-.right_side{
-    margin: 0.6em;
-    padding: 1em;
+.result_field{
+    border: rgb(67, 67, 70) solid 0.2px;
+    padding: 2em;
+    max-width: 35%;
+    margin: auto;
     
-   
-   
+    overflow-x: auto;
+    scrollbar-width: none;
+    padding-bottom: 1%;
+    text-align: right;
 }
+
+.numbers input[type="button"]{
+    margin-top: em;
+    background-color: rgb(40, 42, 44);
+    width: 10%;
+    
+}
+
+blue input[type="button"]{
+    background-color: blue;
+}
+
+.right_side{
+    white-space: wrap;
+    height: 71.4vh;
+    overflow-y: auto;
+    width: 30%;
+    scrollbar-width: none;
+    padding: 1em;
+    border: rgb(67, 67, 70) solid 0.2px;
+    border-bottom: none; 
+}
+
 
 .bottom_side{
     right: 0;
@@ -104,19 +140,51 @@ input[type='button']{
 }
 
 
-@media (max-width:768px){
+@media (min-width:100px) and (max-width:768px){
     .right_side, .left_side{
        
         display: none;
     }
+    .numbers input[type="button"]{
+        background-color: rgb(40, 42, 44);
+        width: 20%;
+        
+    }
+
+    .result_field{
+        border: rgb(67, 67, 70) solid 0.2px;
+        padding: 2em;
+        max-width: 45%;
+        margin: auto;
+        overflow-x: auto;
+        scrollbar-width: none;
+        padding-bottom: 1%;
+    }
   
 }
 
-@media (max-width:1180px){
+@media (max-width:1000px){
 
     .right_side{
         display: none;
     }
+
+    .numbers input[type="button"]{
+        background-color: rgb(40, 42, 44);
+        width: 17%;
+        
+    }
+
+    .result_field{
+        border: rgb(67, 67, 70) solid 0.2px;
+        padding: 2em;
+        max-width: 57%;
+        margin: auto;
+        overflow-x: auto;
+        scrollbar-width: none;
+        padding-bottom: 1%;
+    }
+
 }
 
 
