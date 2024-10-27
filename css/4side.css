@@ -102,7 +102,7 @@ input[type='button']{
 }
 
 .numbers input[type="button"]{
-    margin-top: em;
+    margin-top: 0.7em;
     background-color: #20163b ;
     width: 10%;
     
@@ -149,7 +149,7 @@ blue input[type="button"]{
         display: none;
     }
     .numbers input[type="button"]{
-        background-color: rgb(40, 42, 44);
+        
         width: 20%;
         
     }
@@ -173,7 +173,7 @@ blue input[type="button"]{
     }
 
     .numbers input[type="button"]{
-        background-color: rgb(40, 42, 44);
+       
         width: 17%;
         
     }
