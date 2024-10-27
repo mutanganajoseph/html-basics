@@ -1,11 +1,11 @@
 body{
     margin: 0;
-    color: rgb(156, 156, 160);
+    color: rgb(186, 186, 216);
     padding: 0;
     position: relative; /*this help to postion element in body*/
     min-height: 100vh;
     text-align: center;
-    background-color:rgb(12, 11, 22);
+    background-color:#24292e;
 }
 .header{
     padding: 3em;
@@ -103,7 +103,7 @@ input[type='button']{
 
 .numbers input[type="button"]{
     margin-top: em;
-    background-color: rgb(40, 42, 44);
+    background-color: #20163b ;
     width: 10%;
     
 }
