@@ -87,11 +87,12 @@ input[type='button']{
 }
 
 .result_field{
+
+    margin-bottom: 1em;
     border: rgb(67, 67, 70) solid 0.2px;
     padding: 2em;
     max-width: 35%;
     margin: auto;
-    
     overflow-x: auto;
     scrollbar-width: none;
     padding-bottom: 1%;
