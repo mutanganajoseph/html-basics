@@ -20,35 +20,18 @@ header h1{
 
     
 .canal{
-    /* max-width: 16em; */
+    
     background-color: #fff;
     max-width:16em; 
     margin: 1.8em;
     text-align: center;
     padding: 3em; 
     border: 1em hwb(310 38% 21%) solid;
-    
-    /* outline: 0.4em pink;
-    overflow: none;*/
     height: 27rem;
     display:inline-block;
     
 }
-/* .canal button{
-    
-    border-radius: 0.5em;
-    padding: 0.4em;
-    font-size:1em;
-    color:hsl(0, 44%, 96%);
-    background-color: hwb(310 38% 21%);
-    border:inset 3px white solid;
-}
-.canal button:hover {
-    background-color: rgb(158, 3, 166);
-    transform: scale(1);
-    transition:  2s;
-   
-} */
+
 .hover-button {
     
     border-radius: 50%;
@@ -60,9 +43,7 @@ header h1{
     background-color: #c01eb0;
     color: white;
     overflow: hidden;
-    /* cursor: ;
-    outline: ;
-    z-index: ; Ensure button is above any potential overlapping elements */
+   
 }
 
 .hover-button::before {
