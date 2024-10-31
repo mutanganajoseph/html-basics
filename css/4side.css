@@ -8,11 +8,88 @@ body{
     background-color:#24292e;
 }
 .header{
-    padding: 3em;
-    text-align: center;
+    position: relative;
+    padding: 0.5em;
+
     border-bottom: rgb(67, 67, 70) solid 0.2px;
     
 }
+
+.profile{
+    text-align: right;
+}
+.profile_pic img{ 
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-bottom: -1em;
+}
+
+.profile_name{
+    font-size: 0.7em;
+    text-align: left;
+    margin-top: -20px;
+    
+}
+.profile_pin_name{
+    font-size: 0.6em;
+    margin-top: 1.4em;
+    
+}
+
+.search {
+   
+    position: relative;
+    display: inline-block;
+    
+  }
+
+  .track{
+    margin-top: -30px;
+    text-align: center;
+    color: #8888;
+  }
+  
+  .search input {
+    padding-right: 2em;
+    padding-left: 2em;
+    width: 100%; 
+    
+    
+  }
+  
+  .search-icon{
+    position: absolute;
+    left: 0.5em;
+    top: 10px; 
+  }
+
+  .error_search{
+    color: red;
+    margin-top: 0.3em;
+    font-size: 10px;
+    position: absolute;
+    margin-left: 1em;
+  }
+
+.result_search{
+    margin-top: 0.3em;
+    position: absolute;
+    margin-left: 1em;
+    font-size: 10px;
+    color:rgba(224, 222, 222, 0.801);
+    
+}
+
+  .mic-icon{
+    position: absolute;
+    right: 0.5em;
+    top: 10px;
+    
+  }
+  
+
+
 
 .container{
     display: flex;
@@ -40,6 +117,7 @@ form{
     
 }
 input{
+    border: none;
     margin: 0.2em;
     border-radius: 5px;
     padding: 0.5em;
@@ -53,6 +131,26 @@ input{
    
     
 }
+
+.pass{
+    position: relative;
+    display: inline-block;
+}
+
+.pass input{
+    padding-right: 2em;
+    
+}
+
+.eye{
+    position: absolute;
+    right: 0.6em;
+    top: 8px;
+    
+
+
+}
+
 input[type='button']{
     background-color: green;
     width: 54%;
@@ -76,8 +174,8 @@ input[type='button']{
 
 
 .middel_side{
+    position: relative;
     margin: auto;
-    text-align: center;
     height: 60vh;
     padding: 1em;
     width: 50%;
@@ -93,8 +191,8 @@ input[type='button']{
     background-color: rgb(63, 63, 66);
     border-radius: 5px;
     padding: 2em;
-    max-width: 35%;
     margin: auto;
+    max-width: 35%;
     overflow-x: auto;
     scrollbar-width: none;
     padding-bottom: 1%;
@@ -153,6 +251,21 @@ blue input[type="button"]{
         width: 20%;
         
     }
+    
+
+    .profile_name{
+        display: none;
+    }
+
+    .track{
+        text-align: left;
+        margin-top: -2em;
+    
+    }
+
+    .profile_pin_name{
+        margin-top: 0.8em;
+    }
 
     .result_field{
         border: rgb(67, 67, 70) solid 0.2px;
@@ -166,14 +279,13 @@ blue input[type="button"]{
   
 }
 
-@media (max-width:1000px){
+@media  (max-width:1000px){
 
     .right_side{
         display: none;
     }
 
     .numbers input[type="button"]{
-       
         width: 17%;
         
     }
@@ -181,7 +293,7 @@ blue input[type="button"]{
     .result_field{
         border: rgb(67, 67, 70) solid 0.2px;
         padding: 2em;
-        max-width: 57%;
+        max-width: 60%;
         margin: auto;
         overflow-x: auto;
         scrollbar-width: none;

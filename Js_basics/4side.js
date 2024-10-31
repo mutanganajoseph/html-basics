@@ -1,11 +1,13 @@
- let user = prompt("username ");
- let pass = prompt("Password ");
+//  let user = prompt("username ");
+//  let pass = prompt("Password ");
 const error = document.getElementById("error");
 
 
 
 function clear(){
     error.textContent ='';
+    error_search.textContent = '';
+    result_search.textContent = '';
 
 }
 
@@ -188,3 +190,52 @@ document.getElementById("backspace").onclick = function() {
 document.getElementById("clear").onclick = function() {
     clearCalculator();
 };
+
+// const word = document.getElementById("word");
+// document.getElementById("search").onclick = function(e){
+//     e.preventDefault();
+
+    
+//     word.value = "Hey! this is search icon!"
+// }
+
+// document.getElementById("mic").onclick = function(e){
+//     e.preventDefault();
+
+    
+//     word.value = "Hey! this is micro icon!"
+// }
+
+
+
+
+
+const searchInput = document.getElementById('word');
+const searchIcon = document.getElementById('search');
+const error_search = document.getElementById("error_search");
+const result_search = document.getElementById("result_search");
+
+document.getElementById("word").addEventListener("input", clear);
+
+
+// Function to handle the search
+function performSearch() {
+    const query = searchInput.value.trim();
+    if (query) {
+        result_search.textContent = (`Searching for: ${query}`);
+        // Here, you could replace the console.log with any search processing logic, like an API call
+        // For example: searchDatabase(query);
+    } else {
+        error_search.textContent ='Please enter a search term';
+    }
+}
+
+// Trigger search when Enter is pressed in the input field
+searchInput.addEventListener('keypress', (event) => {
+    if (event.key === 'Enter') {
+        performSearch();
+    }
+});
+
+// Trigger search when the search icon is clicked
+searchIcon.addEventListener('click', performSearch);

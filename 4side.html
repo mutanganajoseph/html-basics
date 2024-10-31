@@ -3,13 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="css/4side.css">
     <title>4side</title>
 </head>
 <body>
    
     <div class="header">
-     My header
+      <div class="profile">
+     <div class="profile_pic">
+      <img src="img/IMG-20231218-WA0000.jpg" alt="profile_pic">
+
+     </div>
+     <div class="track">
+      <div class="search">
+       <div class="search-icon"><i class="fas fa-search" id="search"></i></div>
+   <input type="search" placeholder="Search..." id="word">
+   <div class="error_search" id="error_search"></div>
+   <div class="result_search" id="result_search"></div>
+   <div class="mic-icon"><i class="fas fa-microphone" id="mic"></i></div>
+      </div>
+     </div>
+     <div class="profile_name">
+      MUTANGANA Joseph
+     </div>
+     
+     <div class="profile_pin_name">
+      @mutanganajoseph
+
+     </div>
+    </div>
+  
+
     
     </div> <!--Closing header!-->
 
@@ -24,7 +49,10 @@
         <p>
         <label for="password">Password:</label>
         <p>
+          <div class="pass">
         <input type="password" id="password" placeholder="password...">
+        <div class="eye" onclick="togglePassword()"><i class="fas fa-eye" id="show_password"></i></div>
+      </div>
         <input type="button" value="login" id="login">
         <div class="error" id="error"></div>
 
@@ -51,6 +79,7 @@
     <div class="middel_side">
       <h3>Calculator</h3>
       <div class="result_field" id="result_field" type="text" >
+        
           <div class="result" id="result">0</div>
       </div>
       <div class="numbers">
