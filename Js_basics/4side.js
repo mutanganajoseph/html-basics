@@ -1,5 +1,5 @@
-//  let user = prompt("username ");
-//  let pass = prompt("Password ");
+ let user = prompt("username ");
+ let pass = prompt("Password ");
 const error = document.getElementById("error");
 
 
@@ -22,31 +22,27 @@ document.getElementById("login").onclick = function(e){
 
     
     const user_name = document.getElementById("user_name").value.trim();
-    const password = document.getElementById("password").value.trim();
+    const password = document.getElementById("password").value;
 
     const left_side = document.getElementById("left_side");
 
-    const second = document.getElementById("second");
-    const secon = document.getElementById("secon");
-    const seco = document.getElementById("seco");
-    const sec = document.getElementById("sec");
-    const se = document.getElementById("se");
     if(!user_name || !password){
-        error.textContent ="No user set!";
+        error.textContent ="Please fill input!";
+        
+    }
+
+    else if(!user || !pass){
+        error.textContent ="No user match!";
         
     }
     else if(user_name !== user || password !== pass){
         error.textContent ='Invalid username or password!';
     }
+     
+
 
     else{
 
-        second.textContent = `Hello ${user_name}! You loged in successfully!`;
-        secon.textContent = `Hello ${user_name}! You loged in successfully!`;
-        seco.textContent = `Hello ${user_name}! You loged in successfully!`;
-        sec.textContent = `Hello ${user_name}! You loged in successfully!`;
-        se.innerHTML = `Hello ${user_name}! You loged in successfully!
-        <a href="4side.html">Back</a>`;
         left_side.textContent  = `Hello ${user_name}! You loged in successfully!`;
     }
        
@@ -207,7 +203,21 @@ document.getElementById("clear").onclick = function() {
 // }
 
 
+const password = document.getElementById("password");
+const show_password = document.getElementById("show_password");
 
+function togglePassword(){
+    if (password.type === "password"){
+        password.type = "text";
+        show_password.classList.replace("fa-eye", "fa-eye-slash")
+        
+    }
+    else{
+        password.type = "password";
+        show_password.classList.replace( "fa-eye-slash", "fa-eye")
+
+    }
+}
 
 
 const searchInput = document.getElementById('word');
