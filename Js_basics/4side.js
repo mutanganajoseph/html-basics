@@ -100,6 +100,8 @@ document.getElementById("create").onclick = function(e) {
 
 };
 
+
+
 const result = document.getElementById("result");
 let currentInput = "";
 let previousResult = null;
