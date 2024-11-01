@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="css/4side.css">
     <title>4side</title>
 </head>
-<body>
+<body id="body">
    
     <div class="header">
       <div class="profile">
@@ -17,10 +17,10 @@
      </div>
      <div class="track">
       <div class="search">
-       <div class="search-icon"><i class="fas fa-search" id="search"></i></div>
-   <input type="search" placeholder="Search..." id="word">
-   <div class="error_search" id="error_search"></div>
+       <div class="search-icon"><i class="fas fa-search" id="search" onclick="performSearch()"></i></div>
+   <input type="text" placeholder="Search..." id="word">
    <div class="result_search" id="result_search"></div>
+   <div class="times" id="times"><i class="fas fa-times" id="times"></i></div>
    <div class="mic-icon"><i class="fas fa-microphone" id="mic"></i></div>
       </div>
      </div>

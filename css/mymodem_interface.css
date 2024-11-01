@@ -1,14 +1,20 @@
 body{
     
-    margin:0 auto;
+    margin:auto;
     align-items: center;
     max-width: 992px;
     align-items: center;
+    position: relative;
+    overflow-x: auto;
 
 }
 
 span{
-    position: fixed;
+   position: fixed;
+}
+
+.container{
+    margin: auto;
 }
 
 .first_row{ 
@@ -19,18 +25,16 @@ span{
 }
 
 .big_airtel {
+    
+    position: absolute;
     color:red;
+    margin-top: -0.1em;
+    font-size: 4em;
+    font-weight: bolder;
+    text-shadow: rgb(87, 29, 29) 3px 4px 3px;
    
-    font-size: xx-large;
-    margin-bottom: -1em;
-    margin-left: 2px;
 }
 
-img{
-    font-size: xx-large;
-    margin-bottom: -1em;
-    margin-left: 2px;
-}
 
 select{
     background-color: #e4e1e1;
@@ -55,8 +59,9 @@ l{
     color: aliceblue;
     
     
+    
 }
-.form_header a{
+.form_header div{
     display: inline-block;
     color: aliceblue;
     padding: 15px;
@@ -65,11 +70,8 @@ l{
     font-weight: bolder;
     
 }
-.form_header a:hover, a:focus{
 
-    background-color: rgb(100, 202, 250);
 
-}
 
 footer{
     background:linear-gradient(to right, rgb(159, 188, 196), white, rgb(159, 188, 196)) ;
@@ -169,9 +171,208 @@ footer{
     
 }
 
-.copy{
+.area{
    
+    height: 60vh;
+}
+
+.ussd_place{
+    display: flex;
+    position: relative;
+}
+
+
+
+
+
+.left_side{
+    position: relative;
+    width: 20%;
+    height: 2vh;
+    display: inline-block;
+    margin: 0.9em;
+    padding: 0.3em;
+    background-color: #e2e0e0;
+    border-right: 2px #bbb solid;
+}
+
+.ussdName{
+    
+    font-size: 0.8em;
+    font-weight: bolder;
+   
+}
+
+details{
+    position: absolute;
+    right: 0.6em;
+    padding: 0.2em;
+    top: 5px;
+    height: 9px;
+    width: 9px;
+    border-radius: 50%;
+    color: aliceblue;
+    background-color: #857e7e;
+   
+    
+    
+}
+
+summary{
+     position: absolute;
+    top: 1px;
+    left:3.6px;
+    text-align: right;
+    font-size: 10px;
+    
+}
+
+.riht_arrow {
+    margin-top: -0.2em;
+    position: absolute;
+    width: 98.8%;
+    display: inline-block;
+    background-color: rgb(13, 136, 236);
+    color: white;
+    top: 2em;
+    left: 0;
+    padding: 0.2em;
+    
+}
+
+.riht_arrow h4{
+    position: absolute;
+    color: white;
+    top: -1.2em;
+    left: 1.3em;
+}
+
+.riht_arrow h4:hover{
+    color: black;
+    
+}
+.riht_arrow i:hover{
+    color: white;
+    
+}
+
+
+.service_place{
+    border-left: 1px #bbb solid;
+    margin: 0.3em;
+}
+
+
+.check_service{
+   
+    color: rgb(36, 138, 206);
+    font-weight: bolder;
+    font-size: x-large;
+    border-bottom: #bbb solid 1px;
+    margin: 1em;
+}
+
+.display{
+    max-width: 100%;
+    border: 0.2px #bbb solid; 
+    margin: 2em;
+    height: 20vh;
+    overflow-y:auto;
+    text-align: left;
+    padding-bottom: -2em;
+    padding: 1em;
+   
+}
+
+.command{
+    margin-top: -3em;
+    margin-left: 3em;
+    font-size: 10px;
+    margin-bottom: 0.7em;
+}
+
+
+.write{
+    position: relative;
+}
+
+.drop_down{
+    position: absolute;
+    right: 22.4em;
+    top: 1px;
+    margin-top: -0.51px;
+    padding: 10px;
+    transform: rotate(-270deg);
+    background-color: #887a7a;
+    font-size: 6px;
+    display: inline-block;
+}
+
+input{
+
+margin: 2.2em;
+margin-top: 0em;
+height: 3vh;
+padding-left: 0.3em;
+padding-right: 2.1em;
+}
+
+button{
+    position: absolute;
+    background-color: rgb(64, 168, 228);
+    width: 60px;
+    margin-left: 5em;
+    padding: 3px;
+    border: none;
+    font-weight: bolder;
+    border-radius: 3px;
+    color: rgb(10, 11, 12);
+   
+}
+
+.imput_input{
+    color: red;
+    margin-top: -2em;
+    font-size:small;
+    margin-left: 2.9em;
+}
+
+strong, b{
+    font-size: 12px;
+}
+
+b{
+    color:blue;
+}
+
+.small_text{
+    font-size: 0.8em;
+    color: blue;
+    margin-left: 6.5em;
+    margin-top: -1.3em;
+    margin-bottom: 1em;
+}
+
+
+.sent{
+    margin-left: 5em;
+    margin-bottom: 1em;
+    margin-top: -1em;
+    
+}
+
+
+
+
+.copy{
+    position: absolute;
     border-top:solid #bbb  0.4px ;
+    
+    left: 0;
+    right: 0;
+    
+    
+    
     
 }
 
@@ -193,3 +394,4 @@ footer{
     font-size: small;
     color: #333;
 }
+

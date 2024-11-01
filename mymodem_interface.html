@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/mymodem_interface.css">
-    <link rel="shortcut icon" href="img/air.png" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <title>My modem_interface</title>
 </head>
@@ -12,7 +11,7 @@
     <span>
     <div class="container">     
 <div class="first_row">
-    <div class="big_airtel"><img src="img/air.png" width="6%" alt=""></div>
+    <div class="big_airtel">Airtel</div>
    <div class="language"> <select name="language" id="language">
         <option value="English">English</option>
         <option value="">French</option>
@@ -21,25 +20,27 @@
         <option value="">Spain</option>
         <option value="">Italiano</option>
     </select>
+   </div>
     <div class="data_icon">
         <l><i class="fas fa-message"></i></l>
         <i class="fas fa-signal"></i>
         <l><i class="fas fa-arrow-up"></i>
         <i class="fas fa-arrow-down"></i>
-
-    </div>
     </div>
 </div>
     <div class="form_header">
-            <a href="#">Home</a> |
-           <a href="#">Statistics</a> |
-            <a href="#">SMS</a> |
-            <a href="#">USSD</a> |
-            <a href="#">Update</a> |
-            <a href="#">Settings</a>|
+            <div class="home" id="home" style="background-color: rgb(100, 202, 250);">Home</div> |
+            <div class="statistics" id="statistics">Statistics</div> |
+            <div class="sms" id="sms" >SMS</div> |
+            <div class="ussd" id="ussd">USSD</div> |
+            <div class="update" id="update">Update</div> |
+            <div class="setting" id="setting">Settings</div>|
     </div>
 </div>
-<footer>
+
+
+<div class="area" id="area">
+    <footer>
     <div class="signal">
         <i class="fas fa-signal"></i> </div>
         <div class="Three_G">3G</div>
@@ -58,18 +59,23 @@
         </div>
    
 </footer>
-<div class="end"></div>
-    </div>
+
+ 
+
 
     <div class="data_bar">
     <p>Current connection</p>
     <ul>
         <li>Rececived/sent:<result>Unknown</result></li>
-        <li>Duration:<result>Unknown</result></li>
+        <li>Duration:<result>00:00:00</result></li>
         <li>My number:    <result>Unknown</result></li>
 
     </ul>
 </div>
+</div>
+   
+
+
 
     <div class="copy">
         <div class="privacy">
@@ -79,5 +85,7 @@
     </div>
 
     </span>
+ <script src="Js_basics/myModem_interface.js"></script>
+
 </body>
 </html>

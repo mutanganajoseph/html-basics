@@ -8,7 +8,7 @@ function clear(){
     error.textContent ='';
     error_search.textContent = '';
     result_search.textContent = '';
-
+   
 }
 
 document.getElementById("user_name").addEventListener("input", clear);
@@ -189,20 +189,29 @@ document.getElementById("clear").onclick = function() {
     clearCalculator();
 };
 
-// const word = document.getElementById("word");
-// document.getElementById("search").onclick = function(e){
-//     e.preventDefault();
 
-    
-//     word.value = "Hey! this is search icon!"
-// }
 
-// document.getElementById("mic").onclick = function(e){
-//     e.preventDefault();
 
-    
-//     word.value = "Hey! this is micro icon!"
-// }
+const word = document.getElementById("word");
+
+document.getElementById("times").onclick = function(e){
+    e.preventDefault();
+
+  word.value = '';
+  clear();
+  
+ }
+
+
+ document.getElementById("mic").onclick = function(e){
+    e.preventDefault();
+
+  word.value = 'Hey! this microphone.';
+  
+  
+ }
+
+
 
 
 const password = document.getElementById("password");
@@ -223,9 +232,10 @@ function togglePassword(){
 
 
 const searchInput = document.getElementById('word');
-const searchIcon = document.getElementById('search');
 const error_search = document.getElementById("error_search");
 const result_search = document.getElementById("result_search");
+
+
 
 document.getElementById("word").addEventListener("input", clear);
 
@@ -233,12 +243,23 @@ document.getElementById("word").addEventListener("input", clear);
 // Function to handle the search
 function performSearch() {
     const query = searchInput.value.trim();
+
     if (query) {
         result_search.textContent = (`Searching for: ${query}`);
-        // Here, you could replace the console.log with any search processing logic, like an API call
-        // For example: searchDatabase(query);
-    } else {
-        error_search.textContent ='Please enter a search term';
+        result_search.style.display = 'block';
+        result_search.style.color = 'white';
+    }
+     if(!query) {
+        result_search.textContent ='Please enter a search term';
+        result_search.style.color = 'red';
+        result_search.style.display = 'block';
+        result_search.style.position = 'absolute';
+
+    }
+
+    else{
+        result_search.style.color = 'white';
+
     }
 }
 
@@ -249,5 +270,9 @@ searchInput.addEventListener('keypress', (event) => {
     }
 });
 
-// Trigger search when the search icon is clicked
-searchIcon.addEventListener('click', performSearch);
+
+
+document.getElementById("body").onclick = function(e){
+    result_search.style.display = 'none';
+    
+}

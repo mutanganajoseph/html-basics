@@ -23,14 +23,29 @@ body{
     height: 50px;
     border-radius: 50%;
     margin-bottom: -1em;
+    
 }
 
 .profile_name{
+    position: absolute;
     font-size: 0.7em;
     text-align: left;
     margin-top: -20px;
+    animation:myName 2s ease-in-out infinite;
     
 }
+
+@keyframes myName{
+
+    
+    70%{
+        
+        margin-left:3em;
+
+    }
+
+}
+
 .profile_pin_name{
     font-size: 0.6em;
     margin-top: 1.4em;
@@ -51,9 +66,12 @@ body{
   }
   
   .search input {
-    padding-right: 2em;
+    padding-right: 3.5em;
     padding-left: 2em;
-    width: 100%; 
+   
+    border-radius: 20px;
+    
+    
     
     
   }
@@ -64,19 +82,17 @@ body{
     top: 10px; 
   }
 
-  .error_search{
-    color: red;
-    margin-top: 0.3em;
-    font-size: 14px;
-    position: absolute;
-    margin-left: 2em;
-  }
-
 .result_search{
+
+    display: none;
+    position: absolute;
+    border-radius: 7px;
+    padding: 0.6em;
+    background-color: #1e1e1e;
     margin-top: 0.3em;
     position: absolute;
     margin-left: 1em;
-    font-size: 12px;
+    
     color:rgba(224, 222, 222, 0.801);
     
 }
@@ -84,8 +100,15 @@ body{
   .mic-icon{
     position: absolute;
     right: 0.5em;
-    top: 10px;
+    top: 8px;
     
+  }
+
+
+  .times{
+    position: absolute;
+    right: 1.8em;
+    top: 8px;
   }
   
 
