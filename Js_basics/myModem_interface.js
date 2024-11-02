@@ -15,14 +15,16 @@ document.getElementById("home").onclick = function(e){
     const area = document.getElementById("area");
 area.innerHTML = '';
 
-area.innerHTML = `<footer>
+area.innerHTML = ` <footer>
     <div class="signal">
         <i class="fas fa-signal"></i> </div>
         <div class="Three_G">3G</div>
 
-        <div class="airtel"><j>Airtel</j>
-            <p>
-            Connected<br>
+        <div class="airtel">
+            <div class="centered">
+            <p>AR</p>
+            Connected
+            <br>
 
             <a href="">Connection Settings</a>
             <div class="box">
@@ -31,21 +33,23 @@ area.innerHTML = `<footer>
                 
                 <div class="line"></div>
             </div>
-        </div>
-   
-</footer>
-<div class="end"></div>
-
+            </div>
+           
+       
     </div>
 
+<div class="end">
+</div>
+</footer>
     <div class="data_bar">
     <p>Current connection</p>
     <ul>
         <li>Rececived/sent:<result>Unknown</result></li>
         <li>Duration:<result>00:00:00</result></li>
-        <li>My number:    <result>Unknown</result></li>
+        <li> My number:    <result>Unknown</result></li>
 
     </ul>
+</div>
 </div>
 
 `;
@@ -115,36 +119,40 @@ document.getElementById("ussd").onclick = function(e){
    
     
     area.innerHTML = `
-    <div class="ussd_place">
-        <div class="left_side">
-            <div class="ussdName"> USSD <details><summary>
-               
-            </summary>
-        </details>
-        <div class="riht_arrow">
-            <i class="fas fa-arrow-right"></i> <h4> Check Servise</4>
+   <div class="ussd_place">
+    <div class="left_side">
+        <div class="ussdName" id="ussdName"> USSD <details><summary onclick="show_summary()" id="show_summry">
+           
+        </summary>
+    </details>
+    <div class="right_arrow" id="right_arrow">
+        <i class="fas fa-arrow-right"></i> <h4> Check Servise</4>
+    </div>
         </div>
-            </div>
-            </div>
-        
-        
-    <div class="service_place">  
-    <div class="check_service">Check Services</div>
-    <div class="display" id="display">  </div>
-    <div class="command">Enter a command or select a command from the drop-down list box.</div>
-<div class="write">
-    <input type="text" id="enter" >
-    <div class="drop_down" id="drop_down">
-    <i class="fas fa-play"></i>
- </div>
-    <button class="send" id="send">Send</button>
+        </div>
+    
+<div class="check_service"> <p>Check Services</p>
+
+<div class="display" id="display">  </div>
+
+<div class="select_command"><p>Enter a command or select a command from the drop-down list box.</p>
+<div class="command">
+<input type="text" id="enter" >
+<div class="drop_down" id="drop_down">
+<i class="fas fa-play"></i>
+</div>
+</div>
+
+<button class="send" id="send">Send</button>
 </div>
 <div class="imput_input" id="imput_input"></div>
-</div> 
+
+</div>
 </div>
 
 
     `
+
     
     ;
 
@@ -208,9 +216,12 @@ document.getElementById("send").addEventListener("click", function() {
     // Clear the input field after sending
     document.getElementById("enter").value = '';
 
-}});
+}
+
+});
 
 
+    
 
     ussd.style.backgroundColor =' rgb(100, 202, 250)'
     home.style.backgroundColor = '#4d545a';
