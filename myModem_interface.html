@@ -7,65 +7,70 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <title>My modem_interface</title>
 </head>
-<body>
-    <span>
-    <div class="container">     
-<div class="first_row">
-    <div class="big_airtel">Airtel</div>
-   <div class="language"> <select name="language" id="language">
-        <option value="English">English</option>
-        <option value="">French</option>
-        <option value="">Swahili</option>
-        <option value="">China</option>
-        <option value="">Spain</option>
-        <option value="">Italiano</option>
-    </select>
-   </div>
-    <div class="data_icon">
-        <l><i class="fas fa-envelope"></i></l>
-        <i class="fas fa-signal"></i>
-        <l><i class="fas fa-arrow-up"></i>
-        <i class="fas fa-arrow-down"></i>
+<body> 
+    <header>
+        <div class="big_airtel">
+            Airtel
+        </div>
+        <div class="selectLanguage">
+            <select name="language" id="language">
+                <option value="English">English</option>
+                <option value="">French</option>
+                <option value="">Swahili</option>
+                <option value="">China</option>
+                <option value="">Spain</option>
+                <option value="">Italiano</option>
+            </select>
+        </div>
+        <div class="dataBar">
+            <i class="fas fa-envelope"></i>
+            <i class="fas fa-signal"></i>
+            <i class="fas fa-arrow-up"></i>
+            <i class="fas fa-arrow-down"></i>
+        </div>
+    </header>
+
+    <div class="configurations">
+        <div class="home" id="home" style="background-color: rgb(100, 202, 250);">Home</div> <div>|</div>
+            <div class="statistics" id="statistics">Statistics</div><div>|</div> 
+            <div class="sms" id="sms" >SMS</div> <div>|</div>
+            <div class="ussd" id="ussd">USSD</div> <div>|</div>
+            <div class="update" id="update">Update</div> <div>|</div>
+            <div class="setting" id="setting">Settings</div><div>|</div>
     </div>
-</div>
-    <div class="form_header">
-            <div class="home" id="home" style="background-color: rgb(100, 202, 250);">Home</div> |
-            <div class="statistics" id="statistics">Statistics</div> |
-            <div class="sms" id="sms" >SMS</div> |
-            <div class="ussd" id="ussd">USSD</div> |
-            <div class="update" id="update">Update</div> |
-            <div class="setting" id="setting">Settings</div>|
-    </div>
-</div>
+
 
 
 <div class="area" id="area">
-    <footer>
-    <div class="signal">
-        <i class="fas fa-signal"></i> </div>
-        <div class="Three_G">3G</div>
+    <div class="home_field">
 
-        <div class="airtel">
-            <div class="centered">
-            <p>AR</p>
-            Connected
-            <br>
+        <div class="signal_icon">
+            <i class="fas fa-signal"></i>    
+        </div>
 
-            <a href="">Connection Settings</a>
-            <div class="box">
-                <i class="fas fa-arrow-up"></i>
-                <i class="fas fa-arrow-down"></i>
-                
-                <div class="line"></div>
+        <div class="three_g">3G</div>
+
+        <div class="home_airtel">
+            <strong>AIRTEL</strong>
+            <div class="connected">
+                connected
             </div>
-            </div>
-           
-       
+                <p>
+                <a href="#">connection Settings</a>
+                </p> 
+
+                <div class="dataBox">
+                    <i class="fas fa-arrow-down"></i>
+                    <i class="fas fa-arrow-up"></i>
+                    <div class="line">
+
+                    </div>
+                </div>
+        </div>
     </div>
 
-<div class="end">
-</div>
-</footer>
+    <div class="end"></div>
+
     <div class="data_bar">
     <p>Current connection</p>
     <ul>
@@ -79,7 +84,7 @@
 
 
 
-   
+
 
 
 
@@ -88,10 +93,8 @@
             <a href="">| Privacy Policy |</a>
         </div>
         <div class="copyright">&copy COPYRIGHT (C) 2006-2014 HUAWEI TECHNOLOGIES CO.,LTD. ALL RIGHTS RESERVED.</div>
-    </div>
 
-    </span>
- <script src="Js_basics/myModem_interface.js"></script>
+<script src="Js_basics/myModem_interface.js"></script>
 
 </body>
 </html>

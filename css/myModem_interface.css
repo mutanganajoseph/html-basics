@@ -2,24 +2,21 @@ body{
     
     margin:auto;
     padding: 0;
-    max-width: 900px;
+    max-width: 950px;
     align-items: center;
-    min-height: 100vh;
-    align-items: center;
+    max-height: 65vh;
     position: relative;
    
    
 }
 
-span{
-   max-width: 900px;
-}
-
-
-.first_row{ 
+header{
+    padding: 6px;
+    height: 7vh;
     position: relative;
-    background-color: rgba(238, 234, 234, 0.205);
-    height: 10vh;
+    width: 900px;
+    display: flex;
+    background-color:rgba(241, 241, 245, 0.267);
    
 }
 
@@ -28,152 +25,166 @@ span{
     position: absolute;
     color:red;
     margin-top: -0.1em;
-    font-size: 4em;
+    font-size: 3em;
     font-weight: bolder;
     text-shadow: rgb(87, 29, 29) 3px 4px 3px;
    
 }
 
 
-select{
-    margin: 0.3em;
+
+.selectLanguage, .dataBar{
     position: absolute;
-    right: 0.5em;
-    background-color: #e4e1e1;
-    width: 14%;
-    
-    
+    right: 7em;
+   
 }
 
-.data_icon{
+.selectLanguage select{
 
-    right: 0.5em;
-    margin-top: 2em;
-    position: absolute;
-    color:rgb(91, 171, 247) ;
+    padding: 4px;
+    border-radius: 4px;
+    width: 200%;
+    border: none;
+    background-color: #e1e4e7;
 }
 
-l{
-    margin: 0.2em;
+.dataBar{
+    top: 35px;
+    right: 3.5em;
+    margin-right: -1em;
+}
+.dataBar i{
+    margin-left: 0.3em;
+    font-size: 20px;
+    color: rgb(13, 154, 219);
+}
+.dataBar i:last-child{
+    margin-left: -0.2em;
 }
 
 
-.form_header{
+.configurations{
+    display: flex;
+    position: relative;
+    width: 900px;
+    padding-right: 11px;
     background-color: #4d545a;
-    color: aliceblue;
-  
-    
-    
-    
-}
-.form_header div{
-    display: inline-block;
-    color: aliceblue;
-    padding: 15px;
-    text-decoration: none;
-    font-size: small;
-    font-weight: bolder;
-    
-    
+    color: white;
+   
+
 }
 
+.configurations div{
+    text-align: center;
+    padding: 10px;
+   
+}
 
+.configurations .home:hover, .sms:hover, .statistics:hover, .ussd:hover, .update:hover, .setting:hover{
+    background-color: rgb(13, 154, 219);;
 
-footer{
+}
+
+.home_field{
+    padding-top: 1em;
+    width: 900px;
     background:linear-gradient(to right, rgb(159, 188, 196), white, rgb(159, 188, 196)) ;
-    height: 43vh;
+    padding-right: 11px;
+    display: flex;
     position: relative;
-    text-align: center;
-   
+    min-height: 40vh;
 }
-.signal{
-    position: relative;
-    text-align: center;
-    color: rgba(84, 199, 30, 0.904);
-    padding-top: 0.3em;
+
+.signal_icon, .three_g{
+    position: absolute;
+    left: 20em;
+    margin-top: 2em;
+
+}
+
+.signal_icon i{
+    color: rgb(9, 165, 4);
     font-size: 6em;
+}
+
+.three_g{
+    text-shadow: rgb(13, 31, 10) 1px 1px 2px;
+    top: 7.8em;
+    left: 23em;
+    color: green;
     font-weight: bolder;
-    margin-left: -2em;
     
-}  
-.Three_G{
+
+}
+
+.home_airtel{
     position: absolute;
-    color: rgb(63, 163, 63);
-    font-size: 1.3em;
-    right: 25em;
-    font-weight: bolder;
-    
-
-}
-.airtel{
-   position: relative;
-   display: flex;
-   
-    
-}
-.centered{
-    max-width: 900px;
-    position: absolute;
-    right: 13em;   
-    top: -7em;
-    margin-top: -5em;
-}
-
-.centered p{
-    
-    color: black;
-    font-weight: bolder;
-    font-size: xx-large;
-    
-}
-
-.box{
-    position: absolute;
-    padding: 1.7em;
-    border-radius: 3px;
-    background-color: rgb(197, 229, 250);
-    width: 25%;
-    border: rgb(78, 122, 136) solid 0.3px;
-    text-align: center;
-    color:rgba(84, 199, 30, 0.904);
-    padding-bottom: 0.4em;
-    margin-top: 1em;
-    left: 4em;
-   
-}
-
-
-
-.line{
-    border-bottom:9px rgba(84, 199, 30, 0.904) solid;
-    text-align: center;
-    border-radius: 10px;
-}
-
-.airtel a{
-    margin-left: 5em;
-    color: rgb(14, 182, 248);
-    font-size: 0.8em;
-    font-weight: bolder;
-   
-   
-
-    
-    
-}
-.airtel p{
+    right: 19em;
     margin-top: 2em;
 }
-.end{
+
+.home_airtel strong{
+    font-size: 2em;
     
+}
+
+.home_airtel .connected{
+   margin-top: 2em;
+}
+
+.home_airtel p{
+    margin-top: -0.3em;
+    
+}
+
+.home_airtel p a{
+    color: rgb(29, 150, 219);
+    font-weight: bolder;
+    font-size: small;
+}
+
+
+.dataBox{
+    width: 40%;
+    background-color: rgb(73, 186, 221);
+    text-align: center;
+    padding: 18px;
+    border-radius: 5px;
+    border: 0.3px solid  rgb(58, 116, 56) ;
+    color: rgb(42, 138, 39);
+}
+
+.dataBox i{
+    font-size: x-large;  
+}
+
+.dataBox i:first-child{
+    margin-right: -0.4em;
+}
+
+.dataBox .line{
+    margin-top: 0.2em;
+    width: 50px;
+    background-color: rgb(42, 138, 39);
+    padding: 3px;
+    border-radius: 4px;
+}
+
+
+.end{
+    position:absolute;
     background-color:   #4d545a;
     padding: 20px; 
-    margin-top: 8em;    
+    margin-top: -46px;
+    width: 871px;
+    
 }
 
 
 .data_bar{
     position: relative;
+    margin-top: -1em;
+    width: 900px;
 }
 
 .data_bar p{
@@ -204,7 +215,7 @@ footer{
 
 .data_bar ul li result{
     
-    margin: 3em;
+    margin: 5em;
     margin-top: 0em;
     font-weight: normal;
     
@@ -213,11 +224,493 @@ footer{
 
 .area{
     height: 76vh;
+    
 }
 
+.statistic{
+    position:absolute;
+    margin-left: 3em;
+    margin-top: 2em;
+    margin-bottom: -3em;
+
+    
+
+}
+
+.stat_field{
+    border: #bbb 1px solid;
+    margin-bottom: 2em;
+}
+
+.stat_field_head{
+    background-color: #b6b7b8;
+    padding: 0.6em 0;
+    font-weight: bolder;
+}
+
+.statistic p{
+    font-weight: bolder;
+    font-size: small;
+}
+
+.dataUsageBar, .dataUsage{
+    margin-left: 6em;
+}
+
+.statistic li, .total{
+    list-style: none;
+    font-size: 12px;
+}
+.longBar{
+    background-color: #b7b9bb;
+    position: relative;
+   padding: 5px;
+   width: 78%;
+   margin-top:1em;
+   height: 1vh;
+   box-shadow: inset 1px 0 0 1px rgba(99, 95, 95, 0.3);
+   border-radius: 10px;
+}
+
+.total{
+    margin-top: 0.5em;
+    position: relative;
+    width: 60%;
+    margin-bottom: 2em;
+}
+
+.total li{
+    position: absolute;
+    display: inline-block;
+    right: 1em;
+   
+}
+
+.stat{
+    margin-right: 3em;
+    margin-left: 3em;
+    border-bottom: 1px #bbb solid;
+
+}
+
+.stat input{
+
+    position: absolute;
+    right: 2em;
+    margin-top: -1em;
+    width: 8%;
+    padding: 6px;
+    background-color: rgb(128, 197, 243);
+    border: none;
+    border-radius: 4px;
+    font-weight: bold;
+    
+}
+
+.stats{
+    margin-left: 3em;
+}
+.stats li{
+    margin-top: 2em;
+}
+
+.statEnd{
+    font-size: 12px;
+    margin-left: 3em;
+    padding-bottom: 2em;
+    border-bottom: 1px #bbb solid;
+    margin-right: 4em;
+}
+
+.clearHistory{
+    position: absolute;
+    right: 0;
+    margin-top: 1em;
+    margin-bottom: -3em;
+
+}
+
+.clearHistory input{
+    padding: 5px;
+    background-color: rgb(128, 197, 243);
+    border: none;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+.lastCleared{
+    font-size: small;
+    margin:1em -5em;
+    margin-bottom: -3em;
+}
+
+
+.dataUsage{
+    margin-bottom: 2em;
+}
+
+
+.message{
+    margin-left: 1em;
+    position: relative;
+    display: flex;
+    width: 900px;
+    
+   
+   
+}
+
+.labels{
+    position: relative;
+    padding-right: 9em;
+    width: 150px;
+    font-weight: bolder;
+ 
+}
+
+.inbox, .outbox, .drafts, .sms_settings{
+    position: relative;
+    background-color: rgb(230, 229, 229);
+    margin-top: 0.3em;
+    padding: 7px;
+    width: 200%;
+    border-radius: 2px;
+    font-size:11px;
+
+}
+
+.inbox_number, .outbox_number, .drafts_number{
+    position: absolute;
+    display: inline-block;
+    right: 0.5em;
+    font-size: small;
+}
+
+.inbox:hover,.outbox:hover,.drafts:hover,.sms_settings:hover{
+    color: rgb(38, 144, 214);
+    font-weight: bolder;
+}
+
+.result_message{
+    position: relative;
+    padding-left: 1em;
+    margin-top: 0.4emem;
+   
+    width: 900px;
+   
+   
+}
+
+.inbox_message P, .outbox_message p, .draft_message p{
+    color: rgb(35, 144, 207);
+    font-weight: bolder;
+    font-size: x-large;
+    border-bottom: #bbb solid 1px;
+    width: 600px;
+
+}
+
+.button_field{
+    padding: 5px;
+    border-radius: 2px;
+    background-color: #e3e6e9;
+    width: 588px;
+}
+
+.button_field input{
+    padding: 6px;
+    font-weight: bolder;
+    border-radius: 3px;
+    background-color: #9fd6fc;
+    border: 0.3px solid rgb(129, 184, 216) ;
+    
+}
+.inbox_content table, .outbox_content table, .draft_content table{
+    width: 602px;
+    margin-left: -0.1em;
+   
+}
+
+.inbox_content th, .outbox_content th, .draft_content th{
+   
+    background-color: #bbb;
+    text-align: left;
+    padding-left: 8px;
+
+}
+
+.inbox_content th:first-child, .outbox_content th:first-child, .draft_content th:first-child{
+    text-align: center;
+    padding: 0;
+}
+
+.page{
+    position: relative;
+    padding-right: -4px;
+    display: flex;
+    width: 600px;
+    height: 5vh;
+    background-color: #e6e6e6;
+    
+}
+
+.play_right, .page, .play_left,.rotate_left, .rotate_right{
+    position: absolute;
+
+}
+
+.rotate_left, .rotate_right{
+    font-size: 9px; 
+}
+
+.rotate_left i{
+    position: absolute;
+    transform: rotate(180deg);
+    top: 13px;
+    left: 40em;
+}
+
+.play_right i{
+    position: absolute;
+    margin-top: 8px;
+    left: 27em;
+}
+
+.rotate_right i{
+    position: absolute;
+    top: 11.1px;
+    left: 47.4em;
+    
+}
+
+.play_left i{
+    position: absolute;
+    top: 9px;
+    left: 22.2em;
+   
+}
+
+.pageNumber{
+    position: absolute;
+    right: 12.2em;
+    top: 7px;
+}
+
+.go{
+    position: absolute;
+    right: 3em;
+    margin-top: 5px;
+}
+.go input[type="text"]{
+    width: 15px;
+    margin-left: 1em;
+}
+
+.go input[type="button"]{
+    background-color: rgb(45, 137, 241);
+    border: none;
+    border-radius: 2px;
+    font-weight: bolder;
+}
+
+
+.go b{
+    color: black;
+}
+
+
+.updates{
+    margin-left: 2em;
+    position: relative;
+}
+
+.updates_head{
+    position: absolute;
+    width: 800px;
+    color: rgb(53, 152, 218);
+    font-size: large;
+    font-weight: bolder;
+    margin-top: 1em;
+    border-bottom: #bbb solid 1px;
+    padding-bottom: 0.4em;
+    
+
+}
+
+.update_field{
+    position: absolute;
+    margin-top: 6em;
+    font-size: small;
+   
+}
+
+.update_field a{
+    color: black;
+   
+}
+
+.settings{
+    height: 75vh;
+    display: flex;
+    margin-left: 1em;
+    position: relative;
+}
+
+.options{
+    position: relative;
+    padding-right: 1em;
+    margin-top: 0.5em;
+    border-right: #bbb 1px solid;
+   
+}
+
+.setting_options{
+    font-size: small;
+    font-weight: bolder;
+    position: relative;
+    padding:0.5em;
+    padding-right: 10em;
+    position: relative;
+    flex-direction: row;
+    background-color: #e1e4e7;
+    margin: 1px;
+}
+
+.show b{
+    color: black;
+}
+
+.setting_options:hover, .show b:hover, .show li:hover{
+    color: rgb(88, 157, 235);
+}
+
+.settings details{
+   
+    position: relative;  
+   
+    font-size: small;
+    font-weight: bolder;
+}
+
+.settings details li{
+    list-style: none; 
+   
+}
+
+.settings .show{
+    padding-left: 0;
+    padding-bottom: 1em;
+    padding-top: 1em;
+    background-color: #bbbec0; 
+
+}
+
+.settings .show li{
+    margin-left: 1.3em;
+    padding-top: 3px;
+}
+
+.settings summary{
+    position: absolute;
+    right: 0;
+    top: -24px;
+    color: rgb(148, 126, 126);
+    text-align: center;
+    
+}
+
+
+.setting_result{
+    margin-top: 1em;
+    position: relative;
+    padding-left: 1em;
+  
+}
+
+.setting_result p, .roaming, .disconnect{
+   
+    font-size: 12px;
+    margin-top: 2em;
+}
+
+
+
+.disconnect{
+    padding-bottom: 3em;
+    border-bottom: 1px #bbb solid;
+}
+
+.disconnect select{
+    width: 20%;
+    border: none;
+    padding: 4px;
+}
+
+.apply{
+    position: relative;
+    margin-top: 2em;
+}
+
+.apply input[type="button"]{
+    position: absolute;
+    right: 0;
+    border-color: #e2e0e0;
+    border: none;
+    width: 13%;
+    padding: 4px;
+    font-weight: bolder;
+    color: #9c9494;
+}
+
+.turn_off input[type="button"]{
+    position: absolute;
+    background-color: rgb(30, 140, 204);
+    border: none;
+    padding: 5px;
+    font-weight: bolder;
+    border-radius: 3px;
+    right: 0;
+    margin-top: -3em;
+}
+
+.roaming{
+    display: flex;
+   
+}
+
+.enable{
+   position: absolute;
+   right: 0;
+    
+}
+
+.mobile_head{
+   
+    color: rgb(37, 163, 202);
+    font-weight: bolder;
+    font-size: larger;
+    border-bottom: 1px #bbb solid;
+     margin-bottom: 2em;
+}
+
+.mobile_data{
+    font-weight: bolder;
+}
+
+.make_space{
+    margin-left: 3em;
+}
+
+
+
+
+
 .ussd_place{
+    width: 900px;
     display: flex;
     position: relative;
+    margin-left: 1em;
+
 }
 
 
@@ -225,81 +718,64 @@ footer{
 
 
 .left_side{
-    position: relative;
-    width: 20%;
-    height: 2vh;
-    display: inline-block;
-    margin: 0.9em;
-    padding: 0.3em;
-    background-color: #e2e0e0;
-    border-right: 2px #bbb solid;
+    width: 500px;
 }
 
 .ussdName{
-    
+    text-align: left;
+    margin-top: 1em;
+    background-color: #bbb;
+    margin-right: 1em;
+    height: 3vh;
+    padding-top: 7px;
+    position: relative;
     font-size: 0.8em;
-    font-weight: bolder;
+    font-weight: bolder;  
    
 }
 
-details{
+.ussdName details{
+   position: relative;
+}
+
+
+.ussdName summary{
     position: absolute;
-    right: 0.6em;
-    padding: 0.2em;
-    top: 5px;
-    height: 9px;
-    width: 9px;
-    border-radius: 50%;
-    color: aliceblue;
-    background-color: #857e7e;
-   
-    
+    right: -0.3em;
+    color: #5c5757;
+    top: -17px;
+    color: #504b4b;
+    text-align: center;
     
 }
 
-summary{
-     position: absolute;
-    top: 1px;
-    left:3.6px;
-    text-align: right;
-    font-size: 10px;
-    
+.ussdName .show{
+    background-color:rgb(60, 187, 247);
+    display: flex;
+    height: 4vh;
 }
 
-.right_arrow {
-    margin-top: -0.2em;
-    position: absolute;
-    width: 98.8%;
-    display: inline-block;
-    background-color: rgb(124, 193, 250);
+.show i{
+    margin-top: 1em;
+    margin-left: 0.3em;
+    margin-right: 0.3em;
+}
+
+
+.show h4{
+    margin-top:11px;
     color: white;
-    top: 2em;
-    left: 0;
-    padding: 0.5em;
-    padding-right: 0em;
-   
-    
 }
 
-.right_arrow h4{
-    position: absolute;
-    color: white;
-    top: -0.9em;
-    left: 1.6em;
-}
-
-.right_arrow h4:hover{
+.show h4:hover{
     color: black;
-    
 }
-.right_arrow i:hover{
-    color: white;
-    
-}
+
 
 .check_service{
+    width: 900px;
     position: relative;
-    height: 59vh;
+    height: 75vh;
     border-left: 1px solid #bbb;
     padding-left: 1em;
 }
@@ -311,8 +787,8 @@ summary{
 }
 
 .display{
-    width: 100%;
-    border: 0.2px #bbb solid; 
+    width: 90%;
+    border: 0.2px #1d1a1a solid; 
     height: 20vh;
     overflow-y:auto;
     text-align: left;
@@ -323,8 +799,12 @@ summary{
    
 }
 
+.display_field{
+    margin: 2em;
+}
+
 .select_command p{
-    font-size: 12px;
+    font-size: 10px;
     color: #272525;
     border: none;
 }
@@ -344,10 +824,10 @@ summary{
     position: absolute;
     background-color: rgb(92, 150, 238);
     border: none;
-    width: 15%;
+    width: 10%;
     font-weight: bolder;
     border-radius: 3px;
-    right: -3em;
+    right: 4em;
     margin-top: -1.5em;
     padding: 3px;
 
@@ -371,7 +851,7 @@ summary{
 .imput_input{
     color: red;
     margin-top: 0.4em;
-    font-size:12px;
+    font-size:10.5px;
     position: absolute;
 }
 
