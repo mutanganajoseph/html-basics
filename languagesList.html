@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Programming Languages</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            position: relative;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #093ed1;
+            color: hwb(56 93% 1%);
+            text-align: center;
+            padding: 24px;
+            position: sticky;
+            top: 0;
+            margin-bottom: 1em;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        header ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: inline-block;
+            color:hwb(128 8% 24%); 
+        }
+
+        header ul li {
+            display: inline;
+            margin-right: 10px;
+        }
+
+        header ul li a {
+            color: #edf8fa;
+            text-decoration: none;
+            transform: scale(1);
+        }
+
+        header ul li a:hover {
+            color: hsl(229, 41%, 28%);
+        }
+
+        .languages i {
+            color: rgb(4, 202, 54);
+        }
+
+        .menu_toggle {
+            display: none;
+        }
+
+        .menu {
+            text-align: center;
+        }
+
+        .menu ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .menu li {
+            text-align: center;
+            display: inline-block;
+            margin-left: 2em;
+            padding: 9px;
+            width: 5%;
+        }
+
+        .menu li a {
+            font-size: small;
+            padding: 5px;
+            text-align: center;
+            border-radius: 9px;
+            background-color: black;
+            color:white;
+            font-weight: bolder; 
+            text-decoration: none;
+            display: block;
+        }
+
+        .menu li:hover {
+            background-color: white;
+            text-decoration: none;
+            color:black;
+        }
+
+        /* Mobile Menu Styles */
+        @media (max-width: 768px) {
+            /* Ensure the menu toggle button is visible on small screens */
+            .menu_toggle {
+                display: block;   /* Make sure it's displayed on mobile */
+                position: absolute;
+                right: 1em;
+                top: 8px;
+                font-size: 2em;
+                color: white;
+                text-align: center;
+                border: solid 1px;
+                border-radius: 3px;
+                min-width: 4%;
+                padding: 0.1em 0;
+                cursor: pointer;  /* Make the toggle button clickable */
+            }
+
+            /* Initially hide the menu on mobile screens */
+            .menu {
+                display: none; /* Hide the menu by default on small screens */
+                background-color: #093ed1;
+                right: 1em;
+                position: absolute;
+                width: 30%;
+                line-height: 3vh;
+                text-align: center;
+                top: 60px;  /* Adjust for the header space */
+            }
+
+            /* Ensure the menu items are styled for mobile */
+            .menu ul {
+                list-style-type: none;
+                padding: 0;
+                margin: 0;
+            }
+
+            .menu li {
+                border-bottom: 1px white solid;
+            }
+
+            .menu li a {
+                color: white;
+                font-weight: bolder;
+                text-decoration: none;
+                display: block;
+                padding: 10px;
+            }
+
+            .menu li:hover {
+                background-color: black;
+                color: white;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1><font color="red">P</font>rogramming <font color="red">L</font>anguages</h1> 
+        <div class="languages">
+            <ul>
+                <li><a href="#"><i class="fab fa-cuttlefish"></i> C++</a></li>
+                <li><a href="#"><i class="fab fa-html5"></i> HTML</a></li>
+                <li><a href="#"><i class="fab fa-python"></i> Python</a></li>
+                <li><a href="#"><i class="fas fa-database"></i> MySQL</a></li>
+                <li><a href="#"><i class="fas fa-database"></i> SQL</a></li>
+                <li><a href="#"><i class="fab fa-windows"></i> C#</a></li>
+                <li><a href="#"><i class="fab fa-cuttlefish"></i> Sybase</a></li>
+                <li><a href="#"><i class="fab fa-php"></i> PHP</a></li>
+                <li><a href="#"><i class="fab fa-java"></i> Java</a></li>
+                <li><a href="#"><i class="fab fa-js"></i> JavaScript</a></li>
+                <li><a href="#"><i class="fab fa-python"></i> Django</a></li>
+                <li><a href="#"><i class="fab fa-css3-alt"></i> CSS</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <div class="menu_toggle" onclick="toggleMenu()">
+        <i class="fas fa-bars"></i>
+    </div>
+
+    <div class="menu" id="menu">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Source</a></li>
+        </ul>
+    </div>
+
+    <script>
+        function toggleMenu() {
+            var menu = document.getElementById("menu");
+            var menuToggle = document.querySelector(".menu_toggle i");
+
+            if (menu.style.display === "block") {
+                menu.style.display = "none";
+                menuToggle.classList.remove("fa-times");
+                menuToggle.classList.add("fa-bars");
+            } else {
+                menu.style.display = "block";
+                menuToggle.classList.remove("fa-bars");
+                menuToggle.classList.add("fa-times");
+            }
+        }
+    </script>
+</body>
+</html>
