@@ -57,7 +57,64 @@
             display: none;
         }
 
-        .menu {
+       
+
+      
+        @media (min-width:1px) and (max-width: 768px) {
+            .menu_toggle {
+                display: block;  
+                position: absolute;
+                right: 0.3em;
+                top: 8px;
+                font-size: 2em;
+                color: white;
+                text-align: center;
+                border: solid 1px;
+                border-radius: 3px;
+                width: 7%;
+                
+                
+            }
+
+            
+            .menu {
+                display: none; 
+                background-color: #093ed1;
+                right: 1em;
+                position: absolute;
+                width: 30%;
+                line-height: 3vh;
+                text-align: center;
+                top: 60px;  
+            }
+
+            .menu ul {
+                list-style-type: none;
+                padding: 0;
+                margin: 0;
+            }
+
+            .menu li {
+                border-bottom: 1px white solid;
+            }
+
+            .menu li a {
+                color: white;
+                font-weight: bolder;
+                text-decoration: none;
+                display: block;
+                padding: 10px;
+            }
+
+            .menu li:hover {
+                background-color: black;
+                color: white;
+            }
+        }
+
+       @media  (min-width:769px) and (max-width:2800px){
+
+         .menu {
             text-align: center;
         }
 
@@ -92,60 +149,9 @@
             color:black;
         }
 
-        /* Mobile Menu Styles */
-        @media (max-width: 768px) {
-            /* Ensure the menu toggle button is visible on small screens */
-            .menu_toggle {
-                display: block;   /* Make sure it's displayed on mobile */
-                position: absolute;
-                right: 1em;
-                top: 8px;
-                font-size: 2em;
-                color: white;
-                text-align: center;
-                border: solid 1px;
-                border-radius: 3px;
-                min-width: 4%;
-                padding: 0.1em 0;
-                cursor: pointer;  /* Make the toggle button clickable */
-            }
 
-            /* Initially hide the menu on mobile screens */
-            .menu {
-                display: none; /* Hide the menu by default on small screens */
-                background-color: #093ed1;
-                right: 1em;
-                position: absolute;
-                width: 30%;
-                line-height: 3vh;
-                text-align: center;
-                top: 60px;  /* Adjust for the header space */
-            }
+       }
 
-            /* Ensure the menu items are styled for mobile */
-            .menu ul {
-                list-style-type: none;
-                padding: 0;
-                margin: 0;
-            }
-
-            .menu li {
-                border-bottom: 1px white solid;
-            }
-
-            .menu li a {
-                color: white;
-                font-weight: bolder;
-                text-decoration: none;
-                display: block;
-                padding: 10px;
-            }
-
-            .menu li:hover {
-                background-color: black;
-                color: white;
-            }
-        }
     </style>
 </head>
 <body>
