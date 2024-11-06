@@ -213,7 +213,7 @@ header{
 
 }
 
-.data_bar ul li result{
+.data_bar ul li .result{
     
     margin: 5em;
     margin-top: 0em;

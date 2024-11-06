@@ -15,7 +15,7 @@ document.getElementById("home").onclick = function(e) {
     area.innerHTML = '';
 
     area.innerHTML = ` 
-     <div class="home_field">
+      <div class="home_field">
 
         <div class="signal_icon">
             <i class="fas fa-signal"></i>    
@@ -43,15 +43,16 @@ document.getElementById("home").onclick = function(e) {
     </div>
 
     <div class="end"></div>
-     <div class="data_bar">
+
+    <div class="data_bar">
     <p>Current connection</p>
     <ul>
-        <li>Rececived/sent:<result>Unknown</result></li>
-        <li>Duration:<result>00:00:00</result></li>
-        <li> My number:    <result>Unknown</result></li>
+        <li>Rececived/sent:<div class="result" id="data_result">Unknown</div></li>
+        <li>Duration:<div class="result" id="data_result">00:00:00</div></li>
+        <li> My number:    <div class="result" id="data_result">Unknown</div></li>
 
     </ul>
-</div> -->
+</div>
     `;
 
     // Change background colors for main sections
@@ -122,19 +123,6 @@ document.getElementById("statistics").onclick = function(e){
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 document.getElementById("ussd").onclick = function(e){
    
     
@@ -170,12 +158,7 @@ document.getElementById("ussd").onclick = function(e){
     
     </div>
     </div>
-
-
-    `
-
-    
-    ;
+    `;
 
 
    
@@ -240,9 +223,6 @@ document.getElementById("send").addEventListener("click", function() {
 }
 
 });
-
-
-    
 
     ussd.style.backgroundColor =' rgb(100, 202, 250)'
     home.style.backgroundColor = '#4d545a';
@@ -352,6 +332,7 @@ document.getElementById("setting").onclick = function(e){
     ussd.style.backgroundColor = '#4d545a';
     update.style.backgroundColor = '#4d545a';
 }
+
 
 
 
