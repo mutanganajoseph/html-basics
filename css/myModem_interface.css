@@ -77,7 +77,13 @@ header{
 .configurations div{
     text-align: center;
     padding: 10px;
+    font-weight: bolder;
+    font-size: small;
    
+}
+
+.ellips i{
+    font-size: xx-small;
 }
 
 .configurations .home:hover, .sms:hover, .statistics:hover, .ussd:hover, .update:hover, .setting:hover{
@@ -467,7 +473,7 @@ header{
 .rotate_left i{
     position: absolute;
     transform: rotate(180deg);
-    top: 13px;
+    top: 12px;
     left: 40em;
 }
 
@@ -479,7 +485,7 @@ header{
 
 .rotate_right i{
     position: absolute;
-    top: 11.1px;
+    top: 12px;
     left: 47.4em;
     
 }
@@ -504,6 +510,7 @@ header{
 }
 .go input[type="text"]{
     width: 15px;
+    text-align: center;
     margin-left: 1em;
 }
 
@@ -805,6 +812,10 @@ header{
     margin: 2em;
 }
 
+.display p{
+    border: none;
+}
+
 .select_command p{
     font-size: 10px;
     color: #272525;
@@ -838,7 +849,7 @@ header{
 
 .drop_down{
     position: absolute;
-    top: 0.1px;
+    top: -1px;
     border-radius: 5px 5px 0 0;
     padding: 10px;
     

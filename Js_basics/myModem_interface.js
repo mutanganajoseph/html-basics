@@ -183,7 +183,6 @@ document.getElementById("send").addEventListener("click", function() {
         imputInput.innerHTML = `No command entered or the command entered is formatted incorrectly.`;
         return;
     }
-
     displayDiv.innerHTML +=`<strong>Sent:</strong> <div class="sent">${inputText}</div>`;
     
     if(inputText){
@@ -204,6 +203,7 @@ document.getElementById("send").addEventListener("click", function() {
             </div>`;
 
     }
+    
 
     else{
         
