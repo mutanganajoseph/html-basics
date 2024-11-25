@@ -22,12 +22,23 @@ header{
 
 .big_airtel {
     
-    position: absolute;
+     position: absolute;
+     margin-left: 1em;
     color:red;
     margin-top: -0.1em;
     font-size: 3em;
     font-weight: bolder;
     text-shadow: rgb(87, 29, 29) 3px 4px 3px;
+   
+}
+
+.first_letter{
+    position: absolute;
+    color: red;
+    top: -28px;
+    font-size: 5em;
+    text-shadow: rgb(87, 29, 29) 3px 4px 3px;
+   
    
 }
 
