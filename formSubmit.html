@@ -7,46 +7,33 @@
     <title>Form Submission Message.</title>
 </head>
 <body>
-
+    <div class="container">
     <div class="myField" id="myField">
-        <h1>Form Submission</h1>
-     
-        <form action="POST">
+        <h1>Form submition</h1>  
+        <form action="#">
             <div class="formElement">
-            <label for="first_name">First name:</label>
-            <br>
-            <input type="text" id="firstName" placeholder="Enter you first name..." required>
-        </div>
-    
-        <div class="formElement">
-
-            <label for="second_name">Second name: </label>
-             <br>
-            <input type="text" id="secondName" placeholder="Enter second name..." required>
+            <input type="text" id="firstName"  required>
+            <label for="first_name">First name</label>
+            <div class="firstHover" id="firstHover"></div>
+            <div class="firstNameError" id="firstNameError"></div>
         </div>
         <div class="formElement">
-            <label for="email">Email:</label>
-            <br>
-            <input type="email" name="email" id="email" placeholder="Enter your email..." required>
+            <input type="text" id="secondName"  required>
+            <label for="second_name">Second name </label>
+            <div class="secondHover" id="secondHover"></div>
+            <div class="secondNameError" id="secondNameError"></div>
         </div>
-        <div class="error" id="error"></div>
-
-            <input type="button" value="Submit" id="submit">
-    
-
-        
+        <div class="formElement">
+            <input type="email" name="email" id="email"  required>
+            <label for="email">Email</label>
+            <div class="emailHover" id="emailHover"></div>
+            <div class="emailError" id="emailError"></div>
+        </div>
+         <button  class="button" type="submit" id="submit">Submit</button>
         </form>
 
     </div>
-
-    <div class="submitted" id="submitted">
-        <h3></h3>
-        <a href="formSubmit.html" id="back"></a>
     </div>
-   
-    
-
-
     <script src="Js_basics/formSubmit.js"></script>
 </body>
 </html>
