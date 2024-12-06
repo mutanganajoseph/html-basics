@@ -6,7 +6,39 @@ const setting = document.getElementById("setting");
 const update = document.getElementById("update");
 const statistics = document.getElementById("statistics");
 
+document.getElementById("envelope").addEventListener("mouseover", function(){
+    const envelo = document.getElementById("envelo")
+    envelo.style.display = "block";
+});
 
+document.getElementById("signal").addEventListener("mouseover", function(){
+    const three = document.getElementById("three")
+    three.style.display = "block";
+
+});
+
+document.getElementById("data").addEventListener("mouseover", function(){
+    const wan = document.getElementById("wan")
+    wan.style.display = "block";
+
+});
+
+document.getElementById("envelope").addEventListener("mouseout", function(){
+    const envelo = document.getElementById("envelo")
+    envelo.style.display = "none";
+});
+
+document.getElementById("signal").addEventListener("mouseout", function(){
+    const three = document.getElementById("three")
+    three.style.display = "none";
+
+});
+
+document.getElementById("data").addEventListener("mouseout", function(){
+    const wan = document.getElementById("wan")
+    wan.style.display = "none";
+
+});
 
 
 document.getElementById("home").onclick = function(e) {
@@ -163,7 +195,7 @@ document.getElementById("ussd").onclick = function(e){
 
    
 document.getElementById("send").addEventListener("click", function() {
-    // Get the input value
+   
     const inputText = document.getElementById("enter").value.trim();
     const displayDiv = document.getElementById("display");
     const imputInput = document.getElementById("imput_input");
@@ -187,6 +219,7 @@ document.getElementById("send").addEventListener("click", function() {
     
     if(inputText){
     if(inputText === "*182#"){
+        
        
         displayDiv.innerHTML +=`<b>Recaived:</b>
         <div class="small_text">
@@ -199,10 +232,13 @@ document.getElementById("send").addEventListener("click", function() {
             6. Bank Services<br> 
             7. Gaming<br>
             8. Airtel Pay<br>
-            00. Next<br>
+            00. Next<br> 
             </div>`;
+    
 
-    }
+         }
+
+    
     
 
     else{
@@ -232,8 +268,9 @@ document.getElementById("send").addEventListener("click", function() {
     setting.style.backgroundColor = '#4d545a';
     
 
-
 }
+
+
 
 
 

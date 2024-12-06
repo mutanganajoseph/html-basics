@@ -60,6 +60,8 @@ header{
 }
 
 .dataBar{
+    display: flex;
+    gap: 0.3em;
     top: 35px;
     right: 3.5em;
     margin-right: -1em;
@@ -73,6 +75,35 @@ header{
     margin-left: -0.2em;
 }
 
+.envelo, .three, .wan{
+    font-weight: bolder;
+    display:none;
+    border: #5d5f61 solid 4px;
+    background-color: #dbdfcb;
+    border-radius: 6px 0px 6px 6px;
+    padding: 6px;
+    position: absolute;
+    z-index: 2;
+    font-size: 10px;
+    top:2.6em;
+    width: 80%;
+}
+
+.wan{
+    right: 3.3em;
+  
+}
+
+.envelo{
+    right: 10em;   
+}
+
+.three{
+    right: 7em;
+    
+   
+    text-align: center;
+}
 
 .configurations{
     display: flex;
@@ -109,7 +140,7 @@ header{
     padding-right: 11px;
     display: flex;
     position: relative;
-    min-height: 40vh;
+    min-height: 43vh;
 }
 
 .signal_icon, .three_g{
@@ -162,13 +193,13 @@ header{
 
 
 .dataBox{
-    width: 40%;
-    background-color: rgb(73, 186, 221);
+    width: 45%;
+    background-color: rgba(122, 221, 252, 0.384);
     text-align: center;
-    padding: 18px;
+    padding:5px 18px;
     border-radius: 5px;
-    border: 0.3px solid  rgb(58, 116, 56) ;
-    color: rgb(42, 138, 39);
+    border: 0.3px solid  rgb(89, 222, 255) ;
+    color: rgb(117, 150, 168);
 }
 
 .dataBox i{
@@ -176,13 +207,14 @@ header{
 }
 
 .dataBox i:first-child{
-    margin-right: -0.4em;
+    margin-right: -0.4em; 
 }
 
 .dataBox .line{
     margin-top: 0.2em;
+    margin-left: 0.3em;
     width: 50px;
-    background-color: rgb(42, 138, 39);
+    background-color: rgb(117, 150, 168);
     padding: 3px;
     border-radius: 4px;
 }
