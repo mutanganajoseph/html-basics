@@ -1,0 +1,296 @@
+body{
+    margin:0 auto;
+    height: 100vh;
+    max-width: 1000px;
+    position: relative;
+    background-color: rgb(3, 3, 27);
+}
+
+
+.write {
+    border-radius: 10px;
+    position: absolute;
+    padding-right: -5px;
+    top: 3em;
+    z-index: 10000;
+    width: 100%;
+    max-width: 100%;
+    padding-top:8px;
+    text-align: center;
+}
+
+.write textarea{
+border: none;
+scrollbar-width: none;
+overflow-y: auto;
+min-width: 99%;
+max-width: 90%;
+padding: 8px;
+padding-right: 0;
+max-height: 44.5vh;
+outline: none;
+border-radius: 10px;
+z-index: 20000;
+background-color: rgb(84, 93, 100);
+color: white;
+}
+
+textarea::placeholder{
+    color: rgb(189, 191, 194);
+}
+
+
+.myKeyboard{
+    transition: 2s;
+    bottom: 0;
+    position: absolute;
+    background-color: rgba(246, 250, 249, 0.055);
+    min-width: 100%;
+    text-align: center;
+    min-height: 30vh;
+    padding-bottom: 1em;
+    display: none;
+    z-index: 30000;
+}
+
+.key{
+    margin-top: 1em;
+    position: relative;
+
+}
+
+.type{
+    margin: 0.4em;
+    color: rgba(37, 150, 150, 0.541);
+    width: 6%;
+    text-align: center;
+    background-color: rgba(54, 52, 50, 0.055);
+    border-radius: 3px;
+    font-weight: bolder;
+    transition: all 0.3s ease-in-out;
+    animation:zoom 5s infinite;
+    
+    padding: 3px;
+}
+
+.getSymbols{
+    color: rgba(37, 150, 150, 0.541);
+    width: 11%;
+    text-align: center;
+    background-color: rgba(54, 52, 50, 0.055);
+    border-radius: 3px;
+    font-weight: bolder;
+
+}
+
+@keyframes zoom{
+    60%{
+       
+        color: rgba(255, 255, 255, 0.959);
+    }
+}
+
+#capsLock{
+    text-transform: none;
+    width: 12%;
+    animation: none;
+}
+
+
+.number{
+    margin: 0.4em;
+    width: 7%;
+    border-radius: 7px;
+    padding: 5px;
+    background-color: black;
+    color: azure;
+    font-weight: bolder;
+}
+
+
+.space{
+    width: 40%;
+    height: 5vh;
+    border: solid ;
+    border-top: white solid 1px;
+    border-right: white solid 1px;
+    background-color: rgba(54, 52, 50, 0.055);
+}
+
+.space:active{
+    border-bottom: white solid 1px;
+    border-left: white solid 1px;
+    border-top: none;
+    border-right:none;
+
+}
+
+.enter, .save{
+    background-color: rgb(8, 8, 88);
+    color: white;
+    width: 8%;
+    text-align: center;
+    font-weight: bolder;
+    padding: 5px;
+}
+
+.symbols{
+    width: 300px;
+    display: none;
+    position: absolute;
+    background-color: rgb(179, 194, 207);
+    border-radius: 3px;
+    z-index: 20000;
+    right: 0;
+    bottom: 0;
+}
+
+.signs{
+    
+    padding: 8px;
+    padding-top:23px;
+    gap: 12px;
+    
+}
+
+.symbols i{
+    position: absolute;
+    right: 3px;
+    top: 3px;
+    background-color: rgb(105, 64, 10);
+    width: 5%;
+    border: 1px solid white;
+    color: aliceblue;
+    z-index: 2000;
+    
+}
+
+.symbol{
+    margin-top: 3px;
+}
+
+.symbols i:active{
+    background-color: aliceblue;
+    color: red;
+    border: 1px solid red;
+}
+
+.settings{
+    width: 50%;
+    
+    margin-top: 9em;
+    position: absolute;
+    bottom: 0;
+    display: none;
+    text-align: left;
+    border: 1px solid;
+    border-radius: 8px;
+    background-color: rgb(101, 107, 107);
+
+   
+}
+
+.settingOption{
+    border-bottom: 1px solid;
+    padding: 8px;
+    
+}
+
+#closeSetting{
+    position: absolute;
+    background-color: red;
+    right: 8px;
+    padding: 8px;
+    font-weight: bolder;
+    border: none;
+    color: aliceblue;
+}
+
+#closeSetting:active{
+    background-color: aliceblue;
+    color: red;
+}
+
+.settingOption #yes, #no{
+    width: 10%;
+    font-weight: bolder;
+    color: aliceblue;
+    border: 1px solid white;
+    
+}
+
+.settingOption  #yes {
+    background-color: blue;
+}
+.settingOption  #yes:active {
+    background-color: aliceblue;
+    color: blue;
+   border: 1px solid green;
+}
+
+.settingOption #no{
+    background-color: red;
+    margin-top: 9px;
+}
+
+.settingOption  #no:active {
+    background-color: aliceblue;
+    color: red;
+    border: 1px solid red;
+}
+
+.fold{
+    right: 6em;
+    
+    font-size: small;
+    font-weight: bolder;
+    bottom:224px;
+    position: absolute;
+    width: 50%;
+    color: brown;
+    background-color: beige;
+    border: 2px solid red;
+    padding: 7px;
+    text-align: center;
+    
+}
+
+.fold i{
+    color:red;
+    font-size: x-large;
+}
+
+.fold button{
+    background-color: red;
+    color: white;
+    border: none;
+    font-weight: bolder;
+    animation: close 1s infinite;
+}
+
+
+.fold button:hover{
+    background-color:white;
+    color: red;
+}
+
+.fold button:active{
+    background-color: red;
+    color: white; 
+    animation:close 1s infinite;
+}
+
+
+@keyframes close{
+    70%{
+        color: black;
+    }
+
+    100%{
+        color: white;
+    }
+
+    
+}
+
+

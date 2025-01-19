@@ -1,0 +1,147 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;         
+    margin: 0;  
+}            
+
+
+
+.container{
+   margin: 2em;
+    position: relative;
+    display: flex;
+    gap: 1em;
+}
+
+.nameField{
+    position: relative;
+    width: 300px;
+    border: solid 0.4px #222;
+    padding: 1em;
+    height: 24vh;
+   
+}
+
+.Name{
+    position: relative;
+    padding-top: 1em;
+    width: 300px;
+    border-bottom: solid black 0.6px;
+}
+
+input{
+    width: 100%;
+    border: none;
+    outline: none;
+}
+
+label{
+
+    position: absolute;
+    margin-top:-14px;
+    font-size: small;
+
+
+}
+
+
+
+input:focus + label{
+    margin-top: -39px;
+    color: blue;
+}
+.error{
+  
+    display: none;
+    color: red;
+    position: absolute;
+    font-weight: bolder;
+    font-size: small;
+    margin-top: 3em;
+    margin-left: 4em;
+}
+
+button{
+    position: absolute;
+    width: 30%;
+    background-color: blue;
+    border: none;
+    padding: 0.5em;
+    height: 6vh;
+    text-align: center;
+    right: 1em;
+    bottom: 1em;
+    color: white;
+    font-weight: bolder;
+
+}
+
+#clear{
+    position: absolute;
+    background-color: red;
+    left: 1em;
+    font-weight: bolder;
+}
+
+.display{
+    border: 0.8px solid #222;
+    padding: 1em;
+    width: 300px;
+   
+    text-align: center;
+}
+
+.display h1{
+   
+    margin-top: -0.3em;
+    font-size: larger;
+    text-decoration: underline;
+}
+
+.names{
+    overflow-x: scroll;
+    scrollbar-width: none;
+    text-align: left;
+    width: 300px;
+   font-weight: bolder;
+}
+
+ol{
+    background-color: beige;
+    padding: 1em 2em;
+
+    display: none;
+}
+li{
+    font-size: small;
+    margin: 0.9em;
+    animation: list 2s 1;
+    
+}
+
+@keyframes list{
+    30%{
+        color: rgb(43, 107, 86);
+       margin-left: 3em;
+        z-index: 2;
+    }
+    80%{
+         margin-right: 3em;
+        position: relative;
+        
+    }
+
+    100%{
+        
+        transform: rotate(-360deg);
+    }
+}
+
+
+
+
+
+
+
+

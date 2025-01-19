@@ -76,7 +76,7 @@ document.getElementById("submit").onclick = function(e){
     const email = document.getElementById("email").value;
 
     if(email.match(/^[^@]+@[^@]+\.[^@]+$/) && firstName && secondName){
-        my_field.innerHTML = `Hello ${firstName}, Your form Submitted succefully! <a href="formSubmit.html">Back</a>`;
+        my_field.innerHTML = `Hello ${firstName}, Your form Submitted succefully! <a href="Form_submit.html">Back</a>`;
     }
 
     if(!email.match(/^[^@]+@[^@]+\.[^@]+$/))
