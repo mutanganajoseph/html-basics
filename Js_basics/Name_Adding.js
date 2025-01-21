@@ -18,7 +18,7 @@ add.addEventListener("click", function() {
     }
 
     else if(!nameInput){
-        error.textContent = "Please Enter your name";
+        error.textContent = "Please Fill Input Field";
         error.style.display = "block"
     }
 });

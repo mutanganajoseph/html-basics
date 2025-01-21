@@ -6,6 +6,10 @@ const setting = document.getElementById("setting");
 const update = document.getElementById("update");
 const statistics = document.getElementById("statistics");
 
+
+home.style.backgroundColor = ' rgb(100, 202, 250)';
+
+
 document.getElementById("envelope").addEventListener("mouseover", function(){
     const envelo = document.getElementById("envelo")
     envelo.style.display = "block";
@@ -89,11 +93,50 @@ document.getElementById("home").onclick = function(e) {
 
     // Change background colors for main sections
     home.style.backgroundColor = 'rgb(100, 202, 250)';
-    statistics.style.backgroundColor = '#4d545a';
-    sms.style.backgroundColor = '#4d545a';
-    ussd.style.backgroundColor = '#4d545a';
-    update.style.backgroundColor = '#4d545a';
-    setting.style.backgroundColor = '#4d545a';
+
+
+    home.addEventListener('mouseenter', function() {
+        home.style.backgroundColor = 'rgb(100, 202, 250)';
+    });
+    // home.addEventListener('mouseleave', function() {
+    //     home.style.backgroundColor = 'rgb(100, 202, 250)';
+    // });
+
+    statistics.addEventListener('mouseenter', function() {
+        statistics.style.backgroundColor = 'rgb(100, 202, 250)';
+    });
+    statistics.addEventListener('mouseleave', function() {
+        statistics.style.backgroundColor = '#4d545a';
+    });
+    
+    sms.addEventListener('mouseenter', function() {
+        sms.style.backgroundColor = 'rgb(100, 202, 250)';
+    });
+    sms.addEventListener('mouseleave', function() {
+        sms.style.backgroundColor = '#4d545a';
+    });
+    
+    ussd.addEventListener('mouseenter', function() {
+        ussd.style.backgroundColor = 'rgb(100, 202, 250)';
+    });
+    ussd.addEventListener('mouseleave', function() {
+        ussd.style.backgroundColor = '#4d545a';
+    });
+    
+    update.addEventListener('mouseenter', function() {
+        update.style.backgroundColor = 'rgb(100, 202, 250)';
+    });
+    update.addEventListener('mouseleave', function() {
+        update.style.backgroundColor = '#4d545a';
+    });
+    
+    setting.addEventListener('mouseenter', function() {
+        setting.style.backgroundColor = 'rgb(100, 202, 250)';
+    });
+    setting.addEventListener('mouseleave', function() {
+        setting.style.backgroundColor = '#4d545a';
+    });
+    
 
 }
 
@@ -580,3 +623,5 @@ document.getElementById("draft").addEventListener("click", function() {
 });
 
 }
+
+

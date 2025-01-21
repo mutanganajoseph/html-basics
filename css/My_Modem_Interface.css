@@ -129,7 +129,7 @@ header{
 }
 
 .configurations .home:hover, .sms:hover, .statistics:hover, .ussd:hover, .update:hover, .setting:hover{
-    background-color: rgb(13, 154, 219);;
+    background-color: rgb(100, 202, 250);
 
 }
 
