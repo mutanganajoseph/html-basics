@@ -221,9 +221,17 @@ document.getElementById("ussd").onclick = function(e){
     <div class="select_command"><p>Enter a command or select a command from the drop-down list box.</p>
     <div class="command">
     <input type="text" id="enter" >
-    <div class="drop_down" id="drop_down">
-    <i class="fas fa-play"></i>
+    <div class="drop_down">
+    <i class="fas fa-play" id="drop_down"></i>
     </div>
+    <select id="options">
+        <option value="">Select</option>
+        <option value="*182#">*182#</option>
+        <option value="*255#">*255#</option>
+        <option value="*131#">*131#</option>
+        <option value="*345#">*345#</option>
+        <option value="*151#">*151#</option>
+    </select>
     </div>
     
     <button class="send" id="send">Send</button>
@@ -236,7 +244,35 @@ document.getElementById("ussd").onclick = function(e){
     `;
 
 
-   
+
+
+document.getElementById("options").style.display = "none";
+
+document.getElementById("drop_down").addEventListener("mouseover", function(){
+    document.getElementById("options").style.display = "block";
+    });
+    
+
+document.getElementById("drop_down").addEventListener("mouseout", function(){
+    document.getElementById("options").style.display = "none";
+    });
+
+document.getElementById("options").addEventListener("mouseenter", function(){
+    document.getElementById("options").style.display = "block";
+    });
+
+document.getElementById("options").addEventListener("mouseout", function(){
+    document.getElementById("options").style.display = "none";
+    });
+        
+    
+document.getElementById("options").addEventListener("click", function(){
+    const inputText = document.getElementById("enter");
+    inputText.value = options.value
+    document.getElementById("options").style.display = "none";
+});
+        
+
 document.getElementById("send").addEventListener("click", function() {
    
     const inputText = document.getElementById("enter").value.trim();
@@ -244,14 +280,12 @@ document.getElementById("send").addEventListener("click", function() {
     const imputInput = document.getElementById("imput_input");
    
 
-    
-
     function clear(){
         imputInput.innerHTML = '';
     }
     
     
-    document.getElementById("enter").addEventListener("input", clear)
+    document.getElementById("enter").addEventListener("click", clear)
 
     if(!inputText){
         
@@ -261,7 +295,7 @@ document.getElementById("send").addEventListener("click", function() {
     displayDiv.innerHTML +=`<strong>Sent:</strong> <div class="sent">${inputText}</div>`;
     
     if(inputText){
-    if(inputText === "*182#"){
+    if(inputText === "*182#" || inputText === "*255#"){
         
        
         displayDiv.innerHTML +=`<b>Recaived:</b>

@@ -860,7 +860,7 @@ header{
 }
 
 .select_command p{
-    font-size: 10px;
+    font-size: 13px;
     color: #272525;
     border: none;
 }
@@ -868,11 +868,15 @@ header{
 .command{
     position: relative;
     padding-right: 2em;
+   
+    width: 170px;
 }
 
 .command input{
     position: relative;
     padding: 4px;
+    padding-right: 33px;
+    width: 100%;
 }
 
 
@@ -880,13 +884,23 @@ header{
     position: absolute;
     background-color: rgb(92, 150, 238);
     border: none;
-    width: 10%;
+    width: 15%;
     font-weight: bolder;
     border-radius: 3px;
     right: 4em;
     margin-top: -1.5em;
-    padding: 3px;
+    padding: 8px;
+    
 
+}
+
+.select_command button:hover{
+    background-color: rgba(92, 150, 238, 0.274);
+}
+
+.select_command button:active{
+    background-color: rgba(92, 150, 238, 0.514);
+    color: white;
 }
 
 
@@ -894,20 +908,48 @@ header{
     position: absolute;
     top: -1px;
     border-radius: 5px 5px 0 0;
-    padding: 10px;
-    
+    padding: px;
+    right: -1.3em;
     transform: rotate(-270deg);
     background-color: #887a7a;
-    font-size: 6px;
+    font-size: 8px;
     display: inline-block;
 }
+
+.drop_down i{
+    color: #050708;
+    font-size: 2em;
+    padding: 6.5px;
+}
+
+
+.command select{
+    position: absolute;
+    right: -12.7em;
+    top: 0px;
+    width: 80%;
+    background-color: #2725253b;
+    font-weight: bolder;
+    text-align: center;
+    padding: 4px;
+    
+}
+
+.command option{
+    text-align: center;
+    background-color: #33333341;
+    font-weight: bolder;
+    color: white;
+    
+}
+
 
 
 
 .imput_input{
     color: red;
     margin-top: 0.4em;
-    font-size:10.5px;
+    font-size:13.5px;
     position: absolute;
 }
 
@@ -920,9 +962,9 @@ b{
 }
 
 .small_text{
-    font-size: 0.8em;
+    font-size: 1em;
     color: blue;
-    margin-left: 6.5em;
+    margin-left: 5.4em;
     margin-top: -1.3em;
     margin-bottom: 1em;
 }
