@@ -194,12 +194,14 @@ textarea::placeholder{
     border-bottom: 1px solid;
     padding: 8px;
     
+    
 }
 
 #closeSetting{
     position: absolute;
     background-color: red;
     right: 8px;
+   
     padding: 8px;
     font-weight: bolder;
     border: none;
@@ -241,7 +243,8 @@ textarea::placeholder{
 
 .fold{
     right: 6em;
-    
+    opacity: 1 !important;
+    pointer-events: auto !important;
     font-size: small;
     font-weight: bolder;
     bottom:224px;
@@ -266,6 +269,8 @@ textarea::placeholder{
     border: none;
     font-weight: bolder;
     animation: close 1s infinite;
+    opacity:1 !important;
+    pointer-events: auto !important;
 }
 
 

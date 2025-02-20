@@ -20,6 +20,7 @@ const Yes = document.getElementById("yes");
 const No = document.getElementById("no");
 const closeThis = document.getElementById("closeThis");
 const fold = document.querySelector(".fold")
+const settingOption = document.querySelector(".settingOption")
 
 write.focus()
 
@@ -258,20 +259,29 @@ symbol.forEach(Element =>{
 });
 
 setting.addEventListener("click", function(){
-    
+
     settings.style.display = "block";
     fold.style.display = "block";
+    settings.style.pointerEvents = "none";
+    settings.style.opacity = "0.9";
+    fold.style.pointerEvents = 'auto';
+    fold.style.opacity = '1';
+    
 
 });
 
 closeSetting.addEventListener("click", function(){
     settings.style.display = "none";
+    
 
 });
 
 
 closeThis.addEventListener("click", function(){
     fold.style.display = "none";
+    settings.style.pointerEvents = "auto";
+    settings.style.opacity = "1";
+    // settingOption.classList.remove('disabled');
 })
 
 
