@@ -258,8 +258,10 @@ symbol.forEach(Element =>{
 });
 
 setting.addEventListener("click", function(){
+    
     settings.style.display = "block";
     fold.style.display = "block";
+
 });
 
 closeSetting.addEventListener("click", function(){
