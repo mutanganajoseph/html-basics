@@ -190,12 +190,12 @@ textarea::placeholder{
    
 }
 
+
 .settingOption{
     border-bottom: 1px solid;
     padding: 8px;
-    
-    
 }
+
 
 #closeSetting{
     position: absolute;
@@ -211,6 +211,10 @@ textarea::placeholder{
 #closeSetting:active{
     background-color: aliceblue;
     color: red;
+}
+
+#closeSetting:hover{
+    background-color: rgba(255, 0, 0, 0.555);
 }
 
 .settingOption #yes, #no{
