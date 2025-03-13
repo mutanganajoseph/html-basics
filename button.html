@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body{
+            color: rgb(240, 244, 247);
+        }
+        
+        .right{
+            position: relative;
+            float: right;
+            right: 0;
+            width: 50%;
+        }
+        .right .enable{
+            background-color: rgb(80, 82, 80);
+            width: 50px;
+            border-radius: 30px;
+            padding:13px 0;
+            position: relative;
+        }
+
+        .right .enable .circle{
+            position: absolute;
+            height: 22px;
+            width: 22px;
+            border-radius: 50%;
+            background-color: aliceblue;
+            left: 2px;
+            top:2px;
+            
+        }
+    </style>
+</head>
+<body>
+   
+        <div class="right">
+            <div class="enable" id="enable">  
+                <div class="circle" id="enabled"></div>
+            </div>
+        </div>
+</body>
+
+<script>
+    
+    const enabled = document.getElementById("enabled");
+
+    enable.addEventListener("click", function(){
+        const enable = document.getElementById("enable");
+
+    })
+</script>
+</html>
