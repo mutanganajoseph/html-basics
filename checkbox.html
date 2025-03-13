@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic List with Delete</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #f4f4f4;
+            padding: 20px;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            margin: 10px 0;
+            padding: 10px;
+            background-color: #fff;
+            display: flex;
+            align-items: center;
+        }
+        .delete-btn {
+            margin-left: auto;
+            padding: 5px 10px;
+            background-color: red;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        .checkbox {
+            margin-right: 10px;
+        }
+        .add-item {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="add-item">
+        <input type="text" id="item-input" placeholder="Add new item">
+        <button onclick="addItem()">Add Item</button>
+        <button onclick="selectAll()">Select All</button>
+        <button onclick="deleteSelected()">Delete Selected</button>
+    </div>
+
+    <ul id="item-list">
+        <!-- Items will be appended here -->
+    </ul>
+
+    <script>
+        let itemId = 0; // Start from 0 for item IDs
+
+        // Function to add a new item
+        function addItem() {
+            const input = document.getElementById('item-input');
+            const itemName = input.value.trim();
+
+            if (itemName !== "") {
+                itemId++; // Increment the item ID
+                const li = document.createElement('li');
+                li.setAttribute('data-id', itemId); // Set the unique ID for each item
+
+                const checkbox = document.createElement('input');
+                checkbox.type = 'checkbox';
+                checkbox.classList.add('checkbox');
+                checkbox.setAttribute('data-id', itemId);
+
+                const itemText = document.createElement('span');
+                itemText.innerText = itemName;
+
+                const deleteBtn = document.createElement('button');
+                deleteBtn.classList.add('delete-btn');
+                deleteBtn.innerText = 'Delete';
+                deleteBtn.onclick = () => deleteItem(itemId);
+
+                li.appendChild(checkbox);
+                li.appendChild(itemText);
+                li.appendChild(deleteBtn);
+
+                document.getElementById('item-list').appendChild(li);
+                input.value = ""; // Clear the input
+            }
+        }
+
+        // Function to delete an item by ID
+        function deleteItem(id) {
+            const item = document.querySelector(`[data-id="${id}"]`);
+            if (item) {
+                item.remove();
+            }
+        }
+
+        // Function to delete selected items
+        function deleteSelected() {
+            const selectedItems = document.querySelectorAll('.checkbox:checked');
+            selectedItems.forEach(checkbox => {
+                const itemId = checkbox.getAttribute('data-id');
+                deleteItem(itemId);
+            });
+        }
+
+        // Function to select all checkboxes
+        function selectAll() {
+            const checkboxes = document.querySelectorAll('.checkbox');
+            checkboxes.forEach(checkbox => {
+                checkbox.checked = true;
+            });
+        }
+    </script>
+
+</body>
+</html>
