@@ -7,15 +7,16 @@
 
     <style>
         body{
-            color: rgb(240, 244, 247);
-        }
-        
-        .right{
             position: relative;
-            float: right;
-            right: 0;
-            width: 50%;
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;   
+          }
+        .right{
+            transform: translate(-50%, -50%);
         }
+
+        
+
         .right .enable{
             background-color: rgb(80, 82, 80);
             width: 50px;
@@ -36,22 +37,43 @@
         }
     </style>
 </head>
-<body>
-   
+<body id="body">
+        <div class="space" id="space"> sdbnmnd</div>
         <div class="right">
             <div class="enable" id="enable">  
                 <div class="circle" id="enabled"></div>
             </div>
         </div>
+    
 </body>
 
 <script>
     
     const enabled = document.getElementById("enabled");
+    const enable = document.getElementById("enable");
+    const space = document.getElementById("space")
+    const body = document.getElementById("body")
 
     enable.addEventListener("click", function(){
-        const enable = document.getElementById("enable");
+        if (enabled.style.right != "2px"){
+            enabled.style.left = "unset";
+            enabled.style.right = "2px";
+            enable.style.backgroundColor = "green";
+            space.textContent = "Enabled";
+            body.style.backgroundColor ="yellowgreen"
+            body.style.color = "black";
+        }
+        else{
+            enabled.style.left = "2px";
+            enabled.style.right = "unset";
+            enable.style.backgroundColor = "rgb(80, 82, 80)";
+            space.textContent = "Disabled"
+            body.style.backgroundColor ="red"
+            body.style.color = "white";
+        
 
-    })
+        }
+
+    });
 </script>
 </html>
