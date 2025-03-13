@@ -54,13 +54,36 @@
             top:2px;
             
         }
+
+        .on, .off{
+            position: absolute;
+            
+            color: aliceblue;
+            text-transform: uppercase;
+            font-size: small;
+            font-weight: bolder;
+        }
+
+        .on{
+            left: 2px;
+            font-size: small;
+            top: 6px;
+            display: none;
+        }
+        .off{
+            top: 8px;
+            right: 3px;
+            font-size: x-small;
+        }
     </style>
 </head>
 <body id="body">
         <div class="space" id="space"> </div>
         <div class="right">
-            <div class="enable" id="enable">  
+            <div class="enable" id="enable"> 
+                <div class="on" id="on">on</div> 
                 <div class="circle" id="enabled"></div>
+                <div class="off" id="off">off</div>
             </div>
         </div>
     
@@ -70,8 +93,10 @@
     
     const enabled = document.getElementById("enabled");
     const enable = document.getElementById("enable");
-    const space = document.getElementById("space")
-    const body = document.getElementById("body")
+    const space = document.getElementById("space");
+    const body = document.getElementById("body");
+    const on = document.getElementById("on");
+    const off = document.getElementById("off");
 
     enable.addEventListener("click", function(){
         if (enabled.style.right != "2px"){
@@ -80,6 +105,8 @@
             enable.style.backgroundColor = "red";
             space.textContent = "Enabled";
             body.style.backgroundColor ="rgb(20, 63, 20)"
+            on.style.display = "block"
+            off.style.display = "none"
             
         }
         else{
@@ -87,7 +114,9 @@
             enabled.style.right = "unset";
             enable.style.backgroundColor = "rgb(80, 82, 80)";
             space.textContent = "Disabled"
-            body.style.backgroundColor ="rgb(37, 37, 37)"
+            body.style.backgroundColor ="rgb(37, 37, 37)";
+            off.style.display = "block"
+            
            
         
 
