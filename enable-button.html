@@ -40,7 +40,7 @@
 
         .right .enable{
             background-color: rgb(80, 82, 80);
-            width: 50px;
+            width: 70px;
             border-radius: 30px;
             padding:13px 0;
             position: relative;
@@ -68,14 +68,14 @@
 
         .on{
             left: 2px;
-            font-size: small;
-            top: 6px;
+            font-size:16px;
+            top: 5px;
             display: none;
         }
         .off{
-            top: 8px;
-            right: 3px;
-            font-size: x-small;
+            top: 6px;
+            right: 4px;
+            font-size: small;
         }
     </style>
 </head>
@@ -104,7 +104,7 @@
         if (enabled.style.right != "2px"){
             enabled.style.left = "unset";
             enabled.style.right = "2px";
-            enable.style.backgroundColor = "red";
+            enable.style.backgroundColor = "brown"
             space.textContent = "Enabled";
             body.style.backgroundColor ="rgb(20, 63, 20)"
             on.style.display = "block"
@@ -118,6 +118,7 @@
             space.textContent = "Disabled"
             body.style.backgroundColor ="";
             off.style.display = "block"
+            on.style.display = "none"
             
            
         
