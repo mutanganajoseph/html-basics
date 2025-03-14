@@ -122,7 +122,8 @@
 <script>
 
     const addItem = document.getElementById("addItem");
-    const enteredName = document.getElementById("enteredName").value.trim();
+    const input = document.getElementById("enteredName");
+    const enteredName = input.value.trim();
     
     addItem.addEventListener("click", function(){
         const enteredName = document.getElementById("enteredName").value.trim();
@@ -143,10 +144,11 @@
         li.appendChild(checkbox);
         li.appendChild(itemName);
         li.appendChild(deletebutton);
-        document.getElementById("itemList").appendChild(li)  
+        document.getElementById("itemList").appendChild(li) 
+        input.value= ""; 
 
     }
-    enteredName.value= "";
+   
 
 
     });
