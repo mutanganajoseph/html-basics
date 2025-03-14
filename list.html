@@ -10,30 +10,50 @@
             position: relative;
         }
 
-        ul{
+        .section{
             position: absolute;
-            left: 50%;
-            top: 50%;
-            transform: translate(-50%);
+           left:50%;
+           transform: translate(-50%, 5%);
            list-style: none;
            width: 600px;
            padding-top: 10px;
-           background-color: rgb(163, 160, 160);
-           border-left: 1px solid;
-           border-right: 1px solid;
-           overflow-y: auto;
-           height: 72vh;
-           scrollbar-width: none;
-            
-            
+           box-shadow: 0px 0px 17px 0px rgb(8, 8, 8);
+             
+           
             
 
+        }
+
+        .element{
+            background-color: blue;
+            text-align: center;
+            margin-top: -1em;
+            padding: 5px;
+            color: aliceblue;
+            margin-bottom: 10px;
+        }
+
+        .section .header{
+            position: absolute;
+            left: 2em;
+           
+            
+        }
+        #deleteSelected, #deletAll{
+            pointer-events: none;
+        }
+        ul {
+            margin-top: 3em;
+            overflow-y: auto;
+            scrollbar-width: none;
+            height: 72vh;
+            
         }
 
         ul li{
             position: relative;
             display: flex;
-            background-color: #535151;
+            box-shadow: 1px 0px 5px 0px #222;
             width: 90%;
             padding: 10px 0;
             border-radius: 5px;
@@ -55,37 +75,50 @@
             position: absolute;
             right: 5px;
             pointer-events: none;
+            border: none;
            
         }
+       
 
     </style>
 </head>
 <body>
-    <ul >
-        <div class="ul_header">
+
+    <div class="section">
+        <div class="element">Element</div>
+        <div class="header">
             <input type="text" id="itemName" placeholder="Add item..">
             <input type="button" value="Add Item">
             <button type="button" id="selectAll">Select All</button> 
             <input type="button" id="deleteSelected" value="Delete Selected">
-            <input type="button" value="Delete All" id="deleteAll">
+            <input type="button" value="Delete All" id="deletAll">
         </div>
+
+    
+    <ul >
+       
         <li id="item1">
-            <input type="checkbox" name="" id="">
+            <input type="checkbox" name="" id="check1">
             <div class="item_name">Item 1</div>
-            <input type="button" value="Delete">
+            <input type="button" id="delete" value="Delete">
         </li>
         <li id="item2">
-            <input type="checkbox" name="" id="">
+            <input type="checkbox" name="" id="check2">
             <div class="item_name">Item 1</div>
             <input type="button" value="Delete">
         </li>
         <li id="item3">
-            <input type="checkbox" name="" id="">
+            <input type="checkbox" name="" id="check3">
             <div class="item_name">Item 1</div>
             <input type="button" value="Delete">
         </li>
         
     </ul>
+</div>
     
 </body>
+
+<script>
+   
+</script>
 </html>
