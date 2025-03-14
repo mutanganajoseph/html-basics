@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body{
+            position: relative;
+        }
+
+        ul{
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%);
+           list-style: none;
+           width: 600px;
+           padding-top: 10px;
+           background-color: rgb(163, 160, 160);
+           border-left: 1px solid;
+           border-right: 1px solid;
+           overflow-y: auto;
+           height: 72vh;
+           scrollbar-width: none;
+            
+            
+            
+
+        }
+
+        ul li{
+            position: relative;
+            display: flex;
+            background-color: #535151;
+            width: 90%;
+            padding: 10px 0;
+            border-radius: 5px;
+            margin-bottom: 0.5em;
+           
+        }
+        ul li input[type='checkbox']{
+            position: absolute;
+            left: 5px;
+
+
+            
+        }
+        ul li .item_name{
+            margin-left: 2em;
+           
+        }
+        ul li input[type='button']{
+            position: absolute;
+            right: 5px;
+            pointer-events: none;
+           
+        }
+
+    </style>
+</head>
+<body>
+    <ul >
+        <div class="ul_header">
+            <input type="text" id="itemName" placeholder="Add item..">
+            <input type="button" value="Add Item">
+            <button type="button" id="selectAll">Select All</button> 
+            <input type="button" id="deleteSelected" value="Delete Selected">
+            <input type="button" value="Delete All" id="deleteAll">
+        </div>
+        <li id="item1">
+            <input type="checkbox" name="" id="">
+            <div class="item_name">Item 1</div>
+            <input type="button" value="Delete">
+        </li>
+        <li id="item2">
+            <input type="checkbox" name="" id="">
+            <div class="item_name">Item 1</div>
+            <input type="button" value="Delete">
+        </li>
+        <li id="item3">
+            <input type="checkbox" name="" id="">
+            <div class="item_name">Item 1</div>
+            <input type="button" value="Delete">
+        </li>
+        
+    </ul>
+    
+</body>
+</html>
