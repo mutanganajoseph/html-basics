@@ -15,7 +15,7 @@
            left:50%;
            transform: translate(-50%, 5%);
            list-style: none;
-           width: 600px;
+           width: 650px;
            padding-top: 10px;
            box-shadow: 0px 0px 17px 0px rgb(8, 8, 8);
              
@@ -26,6 +26,7 @@
 
         .element{
             background-color: blue;
+            font-weight: bolder;
             text-align: center;
             margin-top: -1em;
             padding: 5px;
@@ -39,8 +40,9 @@
            
             
         }
-        #deleteSelected, #deletAll{
+        #deleteSelected, #deleteAll{
             pointer-events: none;
+            opacity: 0.3;
         }
         ul {
             margin-top: 3em;
@@ -54,6 +56,7 @@
             border: none;
             border-bottom: 1px solid;
             outline: none;
+            
         }
 
         input[type="button"]{
@@ -61,6 +64,7 @@
             outline: none;
             box-shadow: 0px 0px 0px 0px #a7a3a3;
             background-color: white;
+            
             
            
         }
@@ -82,6 +86,11 @@
 
             
         }
+        #deselectAll{
+           
+            
+            
+        }
         ul li itemName{
             margin-left: 2em;
            
@@ -89,9 +98,12 @@
         ul li input[type='button']{
             position: absolute;
             right: 5px;
-            pointer-events: none;
+            color: red;
             border: none;
            
+        }
+        input[type='button']:hover{
+            font-weight: bolder;
         }
        
 
@@ -105,12 +117,96 @@
             <input type="text" id="enteredName" placeholder="Enter element name to add...">
             <input type="button" id="addItem" value="Add Element">
             <input type="button" id="selectAll" value="Select All"> 
+            <input type="button" id="deselectAll" value="Deselect All"> 
             <input type="button" id="deleteSelected" value="Delete Selected">
-            <input type="button" value="Delete All" id="deletAll">
+            <input type="button" value="Delete All" id="deleteAll">
         </div>
 
     
     <ul id="itemList">
+        <li><input type="checkbox" class="checkbox"><itemname>hello</itemname><input type="button" value="Delete"></li>
+        <li><input type="checkbox" class="checkbox"><itemname>hello</itemname><input type="button" value="Delete"></li>
+        <li><input type="checkbox" class="checkbox"><itemname>hello</itemname><input type="button" value="Delete"></li>
+        <li><input type="checkbox" class="checkbox"><itemname>hello</itemname><input type="button" value="Delete"></li>
+        <li><input type="checkbox" class="checkbox"><itemname>hello</itemname><input type="button" value="Delete"></li>
+        <li><input type="checkbox" class="checkbox"><itemname>hello</itemname><input type="button" value="Delete"></li>
+        <li><input type="checkbox" class="checkbox"><itemname>hello</itemname><input type="button" value="Delete"></li>
+        <li><input type="checkbox" class="checkbox"><itemname>hello</itemname><input type="button" value="Delete"></li>
+        <li><input type="checkbox" class="checkbox"><itemname>hello</itemname><input type="button" value="Delete"></li>
+        <li><input type="checkbox" class="checkbox"><itemname>hello</itemname><input type="button" value="Delete"></li>
+        <li><input type="checkbox" class="checkbox"><itemname>hello</itemname><input type="button" value="Delete"></li>
+        <li><input type="checkbox" class="checkbox"><itemname>hello</itemname><input type="button" value="Delete"></li>
+        <li><input type="checkbox" class="checkbox"><itemname>hello</itemname><input type="button" value="Delete"></li>
+        <li><input type="checkbox" class="checkbox"><itemname>hello</itemname><input type="button" value="Delete"></li>
+        <li><input type="checkbox" class="checkbox"><itemname>hello</itemname><input type="button" value="Delete"></li>
+        <li><input type="checkbox" class="checkbox"><itemname>hello</itemname><input type="button" value="Delete"></li>
+        <li><input type="checkbox" class="checkbox"><itemname>hello</itemname><input type="button" value="Delete"></li>
+        <li><input type="checkbox" class="checkbox"><itemname>hello</itemname><input type="button" value="Delete"></li>
+        <li><input type="checkbox" class="checkbox"><itemname>hello</itemname><input type="button" value="Delete"></li>
+        <li><input type="checkbox" class="checkbox"><itemname>Mutangana</itemname><input type="button" value="Delete"></li>
+        <li><input type="checkbox" class="checkbox"><itemname>hello</itemname><input type="button" value="Delete"></li>
+        <li><input type="checkbox" class="checkbox"><itemname>hello</itemname><input type="button" value="Delete"></li>
+        <li><input type="checkbox" class="checkbox"><itemname>hello</itemname><input type="button" value="Delete"></li>
+        <li><input type="checkbox" class="checkbox"><itemname>hello</itemname><input type="button" value="Delete"></li>
+        <li><input type="checkbox" class="checkbox"><itemname>hello</itemname><input type="button" value="Delete"></li>
+        <li><input type="checkbox" class="checkbox"><itemname>hello</itemname><input type="button" value="Delete"></li>
+        <li><input type="checkbox" class="checkbox"><itemname>hello</itemname><input type="button" value="Delete"></li>
+        <li><input type="checkbox" class="checkbox"><itemname>hello</itemname><input type="button" value="Delete"></li>
+        <li><input type="checkbox" class="checkbox"><itemname>hello</itemname><input type="button" value="Delete"></li>
+        <li><input type="checkbox" class="checkbox"><itemname>hello</itemname><input type="button" value="Delete"></li>
+        <li><input type="checkbox" class="checkbox"><itemname>hello</itemname><input type="button" value="Delete"></li>
+        <li><input type="checkbox" class="checkbox"><itemname>hello</itemname><input type="button" value="Delete"></li>
+        <li><input type="checkbox" class="checkbox"><itemname>hello</itemname><input type="button" value="Delete"></li>
+        <li><input type="checkbox" class="checkbox"><itemname>hello</itemname><input type="button" value="Delete"></li>
+        <li><input type="checkbox" class="checkbox"><itemname>hello</itemname><input type="button" value="Delete"></li>
+        <li><input type="checkbox" class="checkbox"><itemname>hello</itemname><input type="button" value="Delete"></li>
+        <li><input type="checkbox" class="checkbox"><itemname>hello</itemname><input type="button" value="Delete"></li>
+        <li><input type="checkbox" class="checkbox"><itemname>hello</itemname><input type="button" value="Delete"></li>
+        <li><input type="checkbox" class="checkbox"><itemname>hello</itemname><input type="button" value="Delete"></li>
+        <li><input type="checkbox" class="checkbox"><itemname>Mutangana</itemname><input type="button" value="Delete"></li>
+        <li><input type="checkbox" class="checkbox"><itemname>hello</itemname><input type="button" value="Delete"></li>
+        <li><input type="checkbox" class="checkbox"><itemname>hello</itemname><input type="button" value="Delete"></li>
+        <li><input type="checkbox" class="checkbox"><itemname>hello</itemname><input type="button" value="Delete"></li>
+        <li><input type="checkbox" class="checkbox"><itemname>hello</itemname><input type="button" value="Delete"></li>
+        <li><input type="checkbox" class="checkbox"><itemname>hello</itemname><input type="button" value="Delete"></li>
+        <li><input type="checkbox" class="checkbox"><itemname>hello</itemname><input type="button" value="Delete"></li>
+        <li><input type="checkbox" class="checkbox"><itemname>hello</itemname><input type="button" value="Delete"></li>
+        <li><input type="checkbox" class="checkbox"><itemname>hello</itemname><input type="button" value="Delete"></li>
+        <li><input type="checkbox" class="checkbox"><itemname>hello</itemname><input type="button" value="Delete"></li>
+        <li><input type="checkbox" class="checkbox"><itemname>hello</itemname><input type="button" value="Delete"></li>
+        <li><input type="checkbox" class="checkbox"><itemname>hello</itemname><input type="button" value="Delete"></li>
+        <li><input type="checkbox" class="checkbox"><itemname>hello</itemname><input type="button" value="Delete"></li>
+        <li><input type="checkbox" class="checkbox"><itemname>hello</itemname><input type="button" value="Delete"></li>
+        <li><input type="checkbox" class="checkbox"><itemname>hello</itemname><input type="button" value="Delete"></li>
+        <li><input type="checkbox" class="checkbox"><itemname>hello</itemname><input type="button" value="Delete"></li>
+        <li><input type="checkbox" class="checkbox"><itemname>hello</itemname><input type="button" value="Delete"></li>
+        <li><input type="checkbox" class="checkbox"><itemname>hello</itemname><input type="button" value="Delete"></li>
+        <li><input type="checkbox" class="checkbox"><itemname>hello</itemname><input type="button" value="Delete"></li>
+        <li><input type="checkbox" class="checkbox"><itemname>hello</itemname><input type="button" value="Delete"></li>
+        <li><input type="checkbox" class="checkbox"><itemname>Mutangana</itemname><input type="button" value="Delete"></li>
+        <li><input type="checkbox" class="checkbox"><itemname>hello</itemname><input type="button" value="Delete"></li>
+        <li><input type="checkbox" class="checkbox"><itemname>hello</itemname><input type="button" value="Delete"></li>
+        <li><input type="checkbox" class="checkbox"><itemname>hello</itemname><input type="button" value="Delete"></li>
+        <li><input type="checkbox" class="checkbox"><itemname>hello</itemname><input type="button" value="Delete"></li>
+        <li><input type="checkbox" class="checkbox"><itemname>hello</itemname><input type="button" value="Delete"></li>
+        <li><input type="checkbox" class="checkbox"><itemname>hello</itemname><input type="button" value="Delete"></li>
+        <li><input type="checkbox" class="checkbox"><itemname>hello</itemname><input type="button" value="Delete"></li>
+        <li><input type="checkbox" class="checkbox"><itemname>hello</itemname><input type="button" value="Delete"></li>
+        <li><input type="checkbox" class="checkbox"><itemname>hello</itemname><input type="button" value="Delete"></li>
+        <li><input type="checkbox" class="checkbox"><itemname>hello</itemname><input type="button" value="Delete"></li>
+        <li><input type="checkbox" class="checkbox"><itemname>hello</itemname><input type="button" value="Delete"></li>
+        <li><input type="checkbox" class="checkbox"><itemname>hello</itemname><input type="button" value="Delete"></li>
+        <li><input type="checkbox" class="checkbox"><itemname>hello</itemname><input type="button" value="Delete"></li>
+        <li><input type="checkbox" class="checkbox"><itemname>hello</itemname><input type="button" value="Delete"></li>
+        <li><input type="checkbox" class="checkbox"><itemname>hello</itemname><input type="button" value="Delete"></li>
+        <li><input type="checkbox" class="checkbox"><itemname>hello</itemname><input type="button" value="Delete"></li>
+        <li><input type="checkbox" class="checkbox"><itemname>hello</itemname><input type="button" value="Delete"></li>
+        <li><input type="checkbox" class="checkbox"><itemname>hello</itemname><input type="button" value="Delete"></li>
+        <li><input type="checkbox" class="checkbox"><itemname>hello</itemname><input type="button" value="Delete"></li>
+        <li><input type="checkbox" class="checkbox"><itemname>Mutangana</itemname><input type="button" value="Delete"></li>
+       
+       
+       
        
        
         
@@ -124,6 +220,46 @@
     const addItem = document.getElementById("addItem");
     const input = document.getElementById("enteredName");
     const enteredName = input.value.trim();
+    const selectAll = document.getElementById("selectAll");
+    const deselectAll = document.getElementById("deselectAll");
+    const selected = document.getElementById("deleteSelected");
+    const deleteAll = document.getElementById("deleteAll");
+
+
+    selectAll.addEventListener("click", function(){
+        
+        const checkboxes = document.querySelectorAll(".checkbox");
+
+        checkboxes.forEach(checkbox =>{
+            checkbox.checked = true
+            deleteAll.style.pointerEvents ="auto";
+            deleteSelected.style.pointerEvents ="auto";
+            deleteAll.style.opacity ="auto";
+            deleteSelected.style.pointerEvents ="auto";
+            deleteAll.style.color ="red";
+          
+            
+
+            
+        });
+    });
+
+    deselectAll.addEventListener("click", function(){
+        
+        const checkboxes = document.querySelectorAll(".checkbox");
+
+        checkboxes.forEach(checkbox =>{
+            checkbox.checked = false
+            deleteAll.style.pointerEvents ="none";
+
+            deleteSelected.style.pointerEvents ="none";
+            deleteAll.style.color ="";
+          
+            
+
+            
+        });
+    });
     
     addItem.addEventListener("click", function(){
         const enteredName = document.getElementById("enteredName").value.trim();
@@ -139,6 +275,7 @@
 
         const deletebutton = document.createElement("input");
         deletebutton.type = "button";
+        deleteBtn.classList.add('deletebutton');
         deletebutton.value = "Delete";
 
         li.appendChild(checkbox);
@@ -146,6 +283,7 @@
         li.appendChild(deletebutton);
         document.getElementById("itemList").appendChild(li) 
         input.value= ""; 
+        document.getElementById("itemList").scrollTop = document.getElementById("itemList").scrollHeight;
 
     }
    
