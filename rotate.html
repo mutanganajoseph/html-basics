@@ -6,28 +6,45 @@
     <title>Document</title>
     <style>
         .rotate{
-            background-color: rgba(16, 12, 218, 0.829);
-            padding: 5px;
-            width: 152px;
-            height: 2px;
-            border-radius: 50%;
+            
             position: absolute;
             left: 50%;
-            top: 50%;
+            top: 30%;
             transform: translate(-50%);
+            background-image: url(4.jpeg);
+            border-radius: 50%;
+            box-shadow: 0px 0px 0px 10px rgb(82, 11, 11);
+            animation: rotatee 10s infinite ease-in-out;
 
         }
         .rotate img{
-            height: 152px;
-            width: 152px;
+            
+            height: 52px;
+            width: 52px;
             border-radius: 50%;
-            animation: rotate 10s infinite ease-in-out;
+            animation: rotate 30s infinite ease-in-out;
         }
 
         @keyframes rotate{
-            0%{
+            100%{
                 transform: rotate(360deg);
             }
+            
+        }
+        @keyframes rotatee{
+            50%{
+                transform: rotate(360deg);
+                top: 20%;
+                left: 50%;
+            }
+
+            50%{
+              top:5;
+              left:50%;
+
+            }
+
+            
         }
     </style>
 </head>
