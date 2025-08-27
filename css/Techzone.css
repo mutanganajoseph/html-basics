@@ -1,0 +1,846 @@
+@import url('https://fonts.googleapis.com/css2?family=Miniver&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    --white-color: #fff;
+    --dark-color: #252525;
+    --primary-color: #3b141c;
+    --secondary-color: #f3961c;
+    --site-maxwidth: 1300px
+    
+}
+
+html{
+    scroll-behavior: smooth;
+    background-color: black;
+}
+
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+
+button{
+    cursor: pointer;
+    border: none;
+    background: none;
+}
+img{
+    width: 100%;
+}
+
+*{
+    margin: 0;
+    Padding: 0;
+    box-sizing:  border-box;
+    font-family: "Roboto", sans-serif;
+
+}
+
+header{
+     background-color: black;
+    position: sticky;
+    top: 0;
+   
+    
+}
+
+header .nav-bar{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: space-between;
+    margin:0 24px;
+
+   
+}
+
+.nav-bar .nav-menu{
+    display: flex;
+    gap: 10px;
+    
+}
+
+
+
+.nav-bar .nav-menu .nav-link{
+    color: var(--white-color);
+    background-color: black;
+    padding: 8px 8px;
+    font-size: 12px;
+    border-radius: 20px;
+    font-weight: bolder; 
+   
+}
+
+.nav-bar .nav-logo{
+    color: var(--primary-color);
+    display: flex;
+    align-items: center;
+    
+   
+    
+    
+    
+}
+
+.nav-bar .nav-logo .logotext{
+    color: #f3961c;
+    font-weight: bolder;
+    font-size: 4rem;
+    text-shadow: #252525 2px 2px;
+    
+
+}
+
+
+
+.nav-bar .nav-menu .nav-link:hover{
+  color: var(--secondary-color); 
+  border: #f3961c solid 3px;
+  
+
+    
+}
+
+.nav-bar :where(#menu-close-button, #menu-open-button){
+        display: none;
+    }
+
+/* Styling Hero Section */
+.hero-section{
+    background-color:black;
+    
+}
+
+.hero-section .section-content{
+    display: flex;
+    color: var(--white-color);
+    align-items: center;
+    margin:12px;
+
+    
+
+}
+
+.hero-section .hero-img{
+    max-width: 500px;
+}
+
+.hero-section .section-content .hero-detail .title{
+    font-family: "Miniver";
+    color: var(--secondary-color)
+}
+
+.hero-section .section-content .hero-detail .subtitle{
+    margin-top: 20px;
+    max-width: 70%;
+    color: var(--secondary-color)
+
+    
+    
+}
+
+.hero-section .section-content .hero-detail .title{
+    font-family: "Miniver", Sans-Serif;
+    color: var(--secondary-color)
+}
+
+.hero-section .section-content .hero-detail .description{ 
+    margin-top: 30px;
+   color: var(--secondary-color)
+
+}
+
+.hero-section .section-content .hero-detail .button{
+    margin-top: 30px;
+    display: flex;
+    gap: 30px;
+    margin-bottom: 10px;
+    font-weight: bolder;
+}
+
+.hero-section .section-content .hero-detail .button .button-order-now{
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    border-radius: 20px;
+    padding: 10px 26px;
+    transition: 0.3s ease;
+
+}
+.hero-section .section-content .hero-detail .button .button-contact-us{
+    border: white solid;
+    background-color:black;
+    color: var(--white-color);
+    border-radius: 20px;
+    padding: 10px 26px;
+    transition: 0.3s ease;
+    
+
+}
+
+.hero-section .section-content .hero-detail .button .button-contact-us:hover{
+    background-color: var(--secondary-color);
+    color: var(--white-color);
+    border:none;
+    color: #252525;
+    transform: scale(1.1);
+
+}
+.hero-section .section-content .hero-detail .button .button-order-now:hover{
+    background-color: black;
+    color: var(--white-color);
+    border: #fff solid;
+    transform: scale(1.1);
+
+}
+
+/* Styling phone Section */
+
+.phone-section{
+    background-color: black;
+       
+
+}
+.phone-content{
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.phone-section .phone-content img{
+    max-width: 500px;
+}
+
+.phone-section .phone-title{
+    color: var(--white-color);
+    font-size: xx-large;
+    font-weight: bolder;
+    text-transform: uppercase;
+}
+
+.about-us-section{
+    display: block;
+    background-color: black;
+
+
+}
+
+
+/* Styling About us */
+.about-us-section .section-content{
+    margin:0 24px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about-us-section .title{
+    margin-top: 10px;
+    color:#f3961c;
+    border-bottom: white solid 5px;
+}
+.about-us-section .description{
+    color: white;
+    max-width: 50%;
+    text-align: center;
+    margin-bottom: 24px;
+    font-weight: bold;
+
+}
+
+.about-us-section .about-us-im{
+    margin: 24px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    max-width: 50px;
+    background-color: rgba(128, 128, 128, 0.171);
+    border-radius: 50%;
+}
+
+.about-us-section .about-us-img .animated-phone{
+    max-width: 10px;
+   
+    animation: about 12s infinite ease;
+    max-width: 600px;
+    padding: 20px;
+
+}
+
+
+
+@keyframes about{
+    0%{
+        transform: rotate(60deg);
+       
+    }
+
+    50%{
+        transform: rotate(30deg);
+       
+    }
+    
+
+    100%{
+        
+    }
+}
+
+.about-us-section .social{
+    display: flex;
+    padding: 10px;
+    gap: 35px;
+}
+
+.about-us-section .social .social-link{
+    color: #f3961c;
+}
+
+/* Styling Smartphones Sections */
+.smart-phone-section{
+    background-color: black;
+}
+
+.smart-phone-section .section-content{
+    margin: 0 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.smart-phone-section .section-content .title{
+    color: #f3961c;
+    margin: 24px;
+    border-bottom: white solid 5px;
+
+}
+
+.smart-phone-section .section-content .list{
+    
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 40px;
+    gap: 35px;
+   
+
+    
+    
+}
+
+.smart-phone-section .section-content .list .bigphone{
+   max-width: 150px;
+   
+   
+    
+}
+
+.smart-phone-section .section-content .list img{
+   max-width: 300px;
+    
+}
+
+.smart-phone-section .section-content .list .phone{
+    background-color: aliceblue;
+    transition: 0.3s ease;
+    border-radius: 20px;
+    justify-content: center;
+    text-align: center;
+    max-width: 150px;
+    padding: 10px;
+}
+
+.smart-phone-section .section-content  .description{
+    font-weight: bolder;
+}
+
+
+/* Styling Airpods Section */
+
+.airpods-section{
+    background-color: black;
+   
+
+}
+
+.airpods-section .section-content {
+    margin: 0 4px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.airpods-section .section-content .title{
+    color: #f3961c;
+    margin: 24px;
+    border-bottom: white solid 5px;
+
+}
+
+.airpods-section .section-content .airpods-list{
+    
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 40px;
+    gap: 35px;
+   
+
+    
+    
+}
+
+.airpods-section .section-content .airpods-list .airpods{
+    background-color: aliceblue;
+    border-radius: 20px;
+    transition: 0.3s ease;
+    justify-content: center;
+    text-align: center;
+    max-width: 150px;
+    padding: 10px;
+}
+
+.airpods-section .section-content .airpods-list .airpods .airpod-description{
+    font-weight: bolder;
+}
+
+
+/* Styling Headphone Section */
+
+.headphone-section{
+    background-color: black;
+
+}
+
+.headphone-section .section-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 24px;
+}
+
+.headphone-section .section-content .title{
+   color: #f3961c;
+   margin: 24px;
+   border-bottom: white solid 5px;
+   font-weight: bolder;
+
+}
+
+.headphone-section .section-content .list{
+   
+    border-radius: 10px;
+    padding: 20px;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 40px;
+    gap: 35px;
+
+}
+
+.headphone-section .section-content .list .headphone{
+    background-color: aliceblue;
+    border-radius: 20px;
+    transition: 0.3s ease;
+    justify-content: center;
+    text-align: center;
+    max-width: 150px;
+    padding: 10px;
+    font-weight: bolder;
+
+}
+
+/* Styling Speaker Section */
+.speaker-section{
+    background-color: black;
+}
+
+.speaker-section .section-content{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 24px;
+}
+
+.speaker-section .section-content .title{
+   color: #f3961c;
+   margin: 24px;
+   border-bottom: white solid 5px;
+   font-weight: bolder;
+
+}
+
+.speaker-section .section-content .list{
+    
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 40px;
+    gap: 35px;
+
+}
+
+.speaker-section .section-content .list .speaker{
+    background-color: aliceblue;
+    border-radius: 20px;
+    justify-content: center;
+    transition: 0.3s ease;
+    text-align: center;
+    max-width: 150px;
+    padding: 10px;
+    font-weight: bolder;
+
+}
+
+
+/* Styling what customer said */
+.customer-section{
+    background-color: black;
+}
+
+.customer-section .section-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 24px;
+
+}
+
+.customer-section .section-content .title{
+   color: #f3961c;
+   margin: 24px;
+   border-bottom: white solid 5px;
+   font-weight: bolder;
+
+}
+
+.customer-section .section-content .list{
+    
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 40px;
+    min-width: 50%;
+    gap: 30px;
+
+}
+
+.customer-section .section-content .list .user {
+    background-color: aliceblue;
+    border-radius: 20px;
+    justify-content: center;
+    transition: 0.3s ease;
+    text-align: center;
+    max-width: 250px;
+    padding: 10px;
+    font-weight: bolder;
+
+
+}
+.customer-section .section-content .user .name{
+  font-size: small;
+  margin: 10px;
+
+}
+
+.customer-section .section-content .user .description{
+  margin: 10px;
+  max-width: 100%;
+  font-size: small;
+  text-align: center;
+  font-weight: bold;
+  color: rgb(101, 107, 113);
+
+}
+
+.customer-section .section-content .user img{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+
+}
+
+/* Styling Gallery Section */
+.gallery-section{
+    background-color: black;
+}
+.gallery-section .section-content{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+}
+
+.gallery-section .section-content .title{
+   font-size: 60px;
+   color: #f3961c;
+   margin: 24px;
+   border-bottom: white solid 5px;
+   font-weight: bolder;
+
+}
+
+.gallery-section .section-content .list{
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 35px;
+    min-width: 150px;
+
+}
+
+.gallery-section .section-content .list .photo{
+   
+    border-radius: 20px;
+    padding: 10px;
+    transition: 0.3s ease;
+    
+}
+
+.gallery-section .section-content .list .photo img{
+   
+    border-radius: 20px;
+    padding: 10px;
+    max-width: 150px;
+}
+
+.smart-phone-section .section-content .list .phone:hover,
+.speaker-section .section-content .list .speaker:hover,
+.headphone-section .section-content .list .headphone:hover,
+.airpods-section .section-content .airpods-list .airpods:hover,
+.gallery-section .section-content .list .photo:hover{
+    transform: scale(1.1);
+    cursor: zoom-in;
+}
+
+.gallery-section{
+    border-bottom: #f3961c solid 1px;
+    
+}
+
+.contact-us-section{
+    background-color: #252525;
+    color: white;
+
+}
+
+.contact-us-section .section-content{
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+   
+}
+
+.contact-us-section .section-content .title{
+    margin: 12px;
+    border-bottom: white solid 5px;
+    color: #f3961c;
+    text-align: center;
+}
+
+.contact-us-section .section-content .details{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 300px;
+    justify-content: center;
+    
+    
+}
+
+
+
+.contact-us-section .section-content .details .list .item{
+    margin:20px;
+}
+
+
+.contact-us-section form{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 10px;
+   
+}
+
+.contact-us-section form button{
+    background-color:#252525;
+    color:#fff;
+    text-align: center;
+    border: white solid;
+    border-radius: 10px;
+    padding: 4px;
+    transition: 0.3s ease;
+    font-weight: bolder;
+   
+}
+
+.contact-us-section form button:hover{
+    background-color: #f3961c;
+    color: #fff;
+    border: none;
+   
+    
+}
+
+.footer-section{
+    background-color: #252525;
+
+}
+
+.footer-section .section-content{
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    font-weight: bolder;
+    font-size: smaller;
+}
+
+@media screen and (max-width: 900px){
+
+   
+
+    .nav-bar .nav-logo .logotext{
+    font-size: 2rem;
+}
+
+body.show-mobile-menu header::before{
+    content: "";
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    backdrop-filter: blur(5px);
+    background: rgba(0, 0, 0, 0.2);
+}
+
+
+
+    .nav-bar :where(#menu-close-button, #menu-open-button){
+        font-size: 1rem;
+        display: block;
+    }
+
+    .nav-bar #menu-close-button{
+        position: absolute;
+        right: 30px;
+        top:30px;
+    }
+
+    .nav-bar #menu-open-button{
+        color: #fff; 
+
+    }
+
+   
+
+.nav-bar .nav-menu{
+    display: block;
+    position: fixed;
+    background-color: #f3961c;
+    left: -200px;
+    top: 0;
+    width: 200px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 100px;
+    transition: left 0.2s ease;
+    
+}
+
+body.show-mobile-menu .nav-bar .nav-menu{
+    left: 0;
+    
+}
+
+.nav-bar .nav-menu .nav-link{
+    background-color: #f3961c;
+    color: black;
+}
+.nav-bar .nav-menu .nav-link:hover{
+    border: none;
+}
+
+.hero-section .section-content{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+}
+
+.contact-us-section .section-content .details{
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+    gap: 3px;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+
+.about-us-section .description{
+    color: white;
+    max-width: 100%;
+    text-align: center;
+    margin-bottom: 24px;
+    font-weight: bold;
+
+}
+
+.phone-content{
+   
+   flex-direction: column-reverse;
+}
+
+.smart-phone-section .section-content .list,
+.airpods-section .section-content .airpods-list,
+.headphone-section .section-content .list,
+.speaker-section .section-content .list,
+.customer-section .section-content .list,
+.gallery-section .section-content .list{
+    min-width: 100%;
+}
+
+.smart-phone-section .section-content .list .phone,
+.airpods-section .section-content .airpods-list .airpods,
+.headphone-section .section-content .list .headphone,
+.speaker-section .section-content .list .speaker,
+.customer-section .section-content .list .user,
+.gallery-section .section-content .list .photo {
+    max-width: 100%;
+}
+
+
+
+
+}
+
