@@ -86,10 +86,10 @@ header .nav-bar{
 }
 
 .nav-bar .nav-logo .logotext{
-    color: #f3961c;
+    color: #c2720a;
     font-weight: bolder;
     font-size: 4rem;
-    text-shadow: #252525 2px 2px;
+    text-shadow: #e3d0d0 2px 2px;
     
 
 }
@@ -129,8 +129,9 @@ header .nav-bar{
 }
 
 .hero-section .section-content .hero-detail .title{
-    font-family: "Miniver";
-    color: var(--secondary-color)
+    font-family: sans-serif;
+    color: var(--secondary-color);
+    
 }
 
 .hero-section .section-content .hero-detail .subtitle{
@@ -142,14 +143,12 @@ header .nav-bar{
     
 }
 
-.hero-section .section-content .hero-detail .title{
-    font-family: "Miniver", Sans-Serif;
-    color: var(--secondary-color)
-}
 
 .hero-section .section-content .hero-detail .description{ 
     margin-top: 30px;
-   color: var(--secondary-color)
+    max-width: 60%;
+    color: var(--secondary-color);
+    
 
 }
 
@@ -244,7 +243,7 @@ header .nav-bar{
     border-bottom: white solid 5px;
 }
 .about-us-section .description{
-    color: white;
+    color: #f3961c;
     max-width: 50%;
     text-align: center;
     margin-bottom: 24px;
@@ -676,6 +675,7 @@ header .nav-bar{
 
 
 .contact-us-section .section-content .details .list .item{
+    font-size: smaller;
     margin:20px;
 }
 
@@ -718,7 +718,7 @@ header .nav-bar{
     text-align: center;
     padding: 20px;
     font-weight: bolder;
-    font-size: smaller;
+    font-size: xx-small;
 }
 
 @media screen and (max-width: 900px){
@@ -728,8 +728,7 @@ header .nav-bar{
     .nav-bar .nav-logo .logotext{
     font-size: 2rem;
 }
-
-body.show-mobile-menu header::before{
+ body.show-mobile-menu header::before{
     content: "";
     position: fixed;
     left: 0;
@@ -770,7 +769,6 @@ body.show-mobile-menu header::before{
     height: 100%;
     display: flex;
     flex-direction: column;
-    align-items: center;
     padding-top: 100px;
     transition: left 0.2s ease;
     
@@ -784,10 +782,19 @@ body.show-mobile-menu .nav-bar .nav-menu{
 .nav-bar .nav-menu .nav-link{
     background-color: #f3961c;
     color: black;
+    display: inline-block;
+    min-width: 100%;
+    text-align: center;
+    border-radius: 0;
+    border-bottom: #fff solid;
 }
+
 .nav-bar .nav-menu .nav-link:hover{
-    border: none;
+    color: #fff;
+    border-bottom: #3b141c solid;
+
 }
+
 
 .hero-section .section-content{
     display: flex;
@@ -795,6 +802,10 @@ body.show-mobile-menu .nav-bar .nav-menu{
     flex-direction: column-reverse;
 }
 
+.hero-section .section-content .hero-detail .description{
+    max-width: none;
+    text-align: center;
+}
 .contact-us-section .section-content .details{
 
     display: flex;
@@ -808,17 +819,23 @@ body.show-mobile-menu .nav-bar .nav-menu{
 }
 
 .about-us-section .description{
-    color: white;
     max-width: 100%;
-    text-align: center;
-    margin-bottom: 24px;
-    font-weight: bold;
 
 }
 
 .phone-content{
    
    flex-direction: column-reverse;
+}
+
+.customer-section .section-content .title{
+    font-size: 23px;
+
+}
+
+.gallery-section .section-content .title
+{
+    font-size:29px;
 }
 
 .smart-phone-section .section-content .list,
